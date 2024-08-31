@@ -1,0 +1,2301 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:6698f7d7-e6d4-4c9e-ad10-c86bdaeeca01",
+    "version": 20240808,
+    "metadata": {
+        "timestamp": "2024-07-18T11:09:19Z",
+        "tools": {
+            "components": [
+                {
+                    "type": "application",
+                    "group": "sysdig",
+                    "name": "sysdig-image-sbom-extractor",
+                    "version": "v0.0.0-20240703095133-74394e9c09bd"
+                }
+            ]
+        },
+        "component": {
+            "bom-ref": "bfe11318-7a25-4a5d-8777-ee34a53b6f5b",
+            "type": "container",
+            "name": "sha256:6f2e65e5173fdd68e3a87461d7bca70b4e49f0f59fe19680ac149f2dd9219426"
+        }
+    },
+    "components": [
+        {
+            "bom-ref": "23cefc52-ef5b-4b6d-8e89-c1534fdad9db",
+            "type": "operating-system",
+            "name": "alpine",
+            "version": "3.4.6"
+        },
+        {
+            "bom-ref": "7bbeb9f5-ad36-4cc7-a82a-fe9f5efcfb93",
+            "type": "library",
+            "name": "musl",
+            "version": "1.1.14-r14",
+            "purl": "pkg:apk/alpine/musl@1.1.14-r14?distro=alpine-3.4.6&upstream=musl&upstream-version=1.1.14-r14",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "06b61a27-24e8-46b9-8168-2977b09d3a6e",
+            "type": "library",
+            "name": "busybox",
+            "version": "1.24.2-r12",
+            "purl": "pkg:apk/alpine/busybox@1.24.2-r12?distro=alpine-3.4.6&upstream=busybox&upstream-version=1.24.2-r12",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "901f1940-3fcc-4c7a-ba86-5d5e1dfb0837",
+            "type": "library",
+            "name": "alpine-baselayout",
+            "version": "3.0.3-r0",
+            "purl": "pkg:apk/alpine/alpine-baselayout@3.0.3-r0?distro=alpine-3.4.6&upstream=alpine-baselayout&upstream-version=3.0.3-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "29a1d698-70d8-4fd9-a5ce-4bea86f6e817",
+            "type": "library",
+            "name": "alpine-keys",
+            "version": "1.1-r0",
+            "purl": "pkg:apk/alpine/alpine-keys@1.1-r0?distro=alpine-3.4.6&upstream=alpine-keys&upstream-version=1.1-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "b1b10a31-0e0e-4b33-bc70-e8746dcf6f0e",
+            "type": "library",
+            "name": "zlib",
+            "version": "1.2.8-r2",
+            "purl": "pkg:apk/alpine/zlib@1.2.8-r2?distro=alpine-3.4.6&upstream=zlib&upstream-version=1.2.8-r2",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "4efb2461-870a-426f-89c0-a5f4ff26e728",
+            "type": "library",
+            "name": "libcrypto1.0",
+            "version": "1.0.2j-r0",
+            "purl": "pkg:apk/alpine/libcrypto1.0@1.0.2j-r0?distro=alpine-3.4.6&upstream=openssl&upstream-version=1.0.2j-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "08804e71-4717-4dbd-b183-6d95c9b90dc2",
+            "type": "library",
+            "name": "libssl1.0",
+            "version": "1.0.2j-r0",
+            "purl": "pkg:apk/alpine/libssl1.0@1.0.2j-r0?distro=alpine-3.4.6&upstream=openssl&upstream-version=1.0.2j-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "10970513-37df-4ce4-9292-f481f75d9375",
+            "type": "library",
+            "name": "apk-tools",
+            "version": "2.6.7-r0",
+            "purl": "pkg:apk/alpine/apk-tools@2.6.7-r0?distro=alpine-3.4.6&upstream=apk-tools&upstream-version=2.6.7-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "9601ea2a-fcb3-4246-8f6d-9e478ae6d399",
+            "type": "library",
+            "name": "scanelf",
+            "version": "1.1.6-r0",
+            "purl": "pkg:apk/alpine/scanelf@1.1.6-r0?distro=alpine-3.4.6&upstream=pax-utils&upstream-version=1.1.6-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "3c4ca0ae-e300-4916-b3c6-85d55bcb0bf2",
+            "type": "library",
+            "name": "musl-utils",
+            "version": "1.1.14-r14",
+            "purl": "pkg:apk/alpine/musl-utils@1.1.14-r14?distro=alpine-3.4.6&upstream=musl&upstream-version=1.1.14-r14",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "dca45d8e-0e92-4e81-940c-d041db844ee3",
+            "type": "library",
+            "name": "libc-utils",
+            "version": "0.7-r0",
+            "purl": "pkg:apk/alpine/libc-utils@0.7-r0?distro=alpine-3.4.6&upstream=libc-dev&upstream-version=0.7-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "94c86ca4-0804-4137-97c9-1a72e7b4e10d",
+            "type": "library",
+            "name": "libffi",
+            "version": "3.2.1-r2",
+            "purl": "pkg:apk/alpine/libffi@3.2.1-r2?distro=alpine-3.4.6&upstream=libffi&upstream-version=3.2.1-r2",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "e83d66f4-3af4-4d19-bf25-b7c64a35cfcb",
+            "type": "library",
+            "name": "libtasn1",
+            "version": "4.8-r0",
+            "purl": "pkg:apk/alpine/libtasn1@4.8-r0?distro=alpine-3.4.6&upstream=libtasn1&upstream-version=4.8-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "96979105-3e3e-4851-b759-78ba28760c58",
+            "type": "library",
+            "name": "p11-kit",
+            "version": "0.23.2-r0",
+            "purl": "pkg:apk/alpine/p11-kit@0.23.2-r0?distro=alpine-3.4.6&upstream=p11-kit&upstream-version=0.23.2-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "240c4da0-4d3b-4da7-9a8a-dbbb944b5dbb",
+            "type": "library",
+            "name": "p11-kit-trust",
+            "version": "0.23.2-r0",
+            "purl": "pkg:apk/alpine/p11-kit-trust@0.23.2-r0?distro=alpine-3.4.6&upstream=p11-kit&upstream-version=0.23.2-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "4dced8e6-0cf2-4ad7-a727-edb2d2e72796",
+            "type": "library",
+            "name": "ca-certificates",
+            "version": "20160104-r4",
+            "purl": "pkg:apk/alpine/ca-certificates@20160104-r4?distro=alpine-3.4.6&upstream=ca-certificates&upstream-version=20160104-r4",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "e7b8dd16-1442-48ed-9d14-30a555adc5bd",
+            "type": "library",
+            "name": "java-cacerts",
+            "version": "1.0-r0",
+            "purl": "pkg:apk/alpine/java-cacerts@1.0-r0?distro=alpine-3.4.6&upstream=java-cacerts&upstream-version=1.0-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "fa2356c7-0669-42a9-97e8-0d727892a00d",
+            "type": "library",
+            "name": "libxau",
+            "version": "1.0.8-r1",
+            "purl": "pkg:apk/alpine/libxau@1.0.8-r1?distro=alpine-3.4.6&upstream=libxau&upstream-version=1.0.8-r1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "05515498-2327-45d5-9f95-288bd0e0dcd4",
+            "type": "library",
+            "name": "libxdmcp",
+            "version": "1.1.2-r1",
+            "purl": "pkg:apk/alpine/libxdmcp@1.1.2-r1?distro=alpine-3.4.6&upstream=libxdmcp&upstream-version=1.1.2-r1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "42e2fd03-3975-44dd-a780-c4ea4e5f6677",
+            "type": "library",
+            "name": "libxcb",
+            "version": "1.11.1-r0",
+            "purl": "pkg:apk/alpine/libxcb@1.11.1-r0?distro=alpine-3.4.6&upstream=libxcb&upstream-version=1.11.1-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "734bc5d3-5d4d-45cd-be25-bf5329001d92",
+            "type": "library",
+            "name": "libx11",
+            "version": "1.6.4-r0",
+            "purl": "pkg:apk/alpine/libx11@1.6.4-r0?distro=alpine-3.4.6&upstream=libx11&upstream-version=1.6.4-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "85eeaebf-6c31-4e3e-ac77-f9b825bfa6ba",
+            "type": "library",
+            "name": "libxext",
+            "version": "1.3.3-r1",
+            "purl": "pkg:apk/alpine/libxext@1.3.3-r1?distro=alpine-3.4.6&upstream=libxext&upstream-version=1.3.3-r1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "41212eed-9255-43c8-a3b3-7d94a9fd4f13",
+            "type": "library",
+            "name": "libxi",
+            "version": "1.7.7-r0",
+            "purl": "pkg:apk/alpine/libxi@1.7.7-r0?distro=alpine-3.4.6&upstream=libxi&upstream-version=1.7.7-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "9d18222c-6106-4feb-81e3-6b2a9bb0b9e0",
+            "type": "library",
+            "name": "libxrender",
+            "version": "0.9.10-r0",
+            "purl": "pkg:apk/alpine/libxrender@0.9.10-r0?distro=alpine-3.4.6&upstream=libxrender&upstream-version=0.9.10-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "57ecd7ad-e1c1-42e0-bf4b-0033a024a305",
+            "type": "library",
+            "name": "libxtst",
+            "version": "1.2.3-r0",
+            "purl": "pkg:apk/alpine/libxtst@1.2.3-r0?distro=alpine-3.4.6&upstream=libxtst&upstream-version=1.2.3-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "54ab6f85-bd8e-4ec5-a970-9200e7bffaae",
+            "type": "library",
+            "name": "libpng",
+            "version": "1.6.21-r0",
+            "purl": "pkg:apk/alpine/libpng@1.6.21-r0?distro=alpine-3.4.6&upstream=libpng&upstream-version=1.6.21-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "bc8dab9c-34fa-4d34-8b6c-12a34ceee2fa",
+            "type": "library",
+            "name": "freetype",
+            "version": "2.6.3-r0",
+            "purl": "pkg:apk/alpine/freetype@2.6.3-r0?distro=alpine-3.4.6&upstream=freetype&upstream-version=2.6.3-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "c77336cf-9eb3-4448-a07e-d6537c26aad4",
+            "type": "library",
+            "name": "libgcc",
+            "version": "5.3.0-r0",
+            "purl": "pkg:apk/alpine/libgcc@5.3.0-r0?distro=alpine-3.4.6&upstream=gcc&upstream-version=5.3.0-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "9c2ae549-3b11-4082-be7f-57c9d08cce0a",
+            "type": "library",
+            "name": "giflib",
+            "version": "5.1.4-r1",
+            "purl": "pkg:apk/alpine/giflib@5.1.4-r1?distro=alpine-3.4.6&upstream=giflib&upstream-version=5.1.4-r1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "3cfabab7-b049-4b4e-9cdf-1ecee77eeb2b",
+            "type": "library",
+            "name": "openjdk8-jre-lib",
+            "version": "8.111.14-r0",
+            "purl": "pkg:apk/alpine/openjdk8-jre-lib@8.111.14-r0?distro=alpine-3.4.6&upstream=openjdk8&upstream-version=8.111.14-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "f95eae84-a632-4cff-9f5a-92a2acc05995",
+            "type": "library",
+            "name": "java-common",
+            "version": "0.1-r0",
+            "purl": "pkg:apk/alpine/java-common@0.1-r0?distro=alpine-3.4.6&upstream=java-common&upstream-version=0.1-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "c21309ee-08f5-4770-a4e4-77c754a2273f",
+            "type": "library",
+            "name": "alsa-lib",
+            "version": "1.1.1-r3",
+            "purl": "pkg:apk/alpine/alsa-lib@1.1.1-r3?distro=alpine-3.4.6&upstream=alsa-lib&upstream-version=1.1.1-r3",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "2d64247a-5eaa-4319-bc39-32501cc3c66d",
+            "type": "library",
+            "name": "openjdk8-jre-base",
+            "version": "8.111.14-r0",
+            "purl": "pkg:apk/alpine/openjdk8-jre-base@8.111.14-r0?distro=alpine-3.4.6&upstream=openjdk8&upstream-version=8.111.14-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "2e0b8608-146b-4cb2-af30-c318174105a2",
+            "type": "library",
+            "name": "openjdk8-jre",
+            "version": "8.111.14-r0",
+            "purl": "pkg:apk/alpine/openjdk8-jre@8.111.14-r0?distro=alpine-3.4.6&upstream=openjdk8&upstream-version=8.111.14-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "f6b8a479-63fd-436a-86f8-32b06f6ba439",
+            "type": "library",
+            "name": "openjdk8",
+            "version": "8.111.14-r0",
+            "purl": "pkg:apk/alpine/openjdk8@8.111.14-r0?distro=alpine-3.4.6&upstream=openjdk8&upstream-version=8.111.14-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:bef6fa0c97dde15580fd7436a93dc9dacc67fb1764395b133d5dc90a2c4cc4ec"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "80d63a97-fdb2-44ad-9e38-91e34ea8271f",
+            "type": "library",
+            "name": "libcap",
+            "version": "2.25-r0",
+            "purl": "pkg:apk/alpine/libcap@2.25-r0?distro=alpine-3.4.6&upstream=libcap&upstream-version=2.25-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f44ee9e8a8fc568eb68ce91fb0175e1fe761b2acf43d0b625d03a858e856abe9"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "3"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "74b15d12-aea1-4a02-97f9-dc7665769574",
+            "type": "library",
+            "group": "works.weave.microservices-demo",
+            "name": "orders",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/works.weave.microservices-demo/orders@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "5d9a5b98-6608-44d4-9135-922f8f632839",
+            "type": "library",
+            "group": "org.jboss.logging",
+            "name": "jboss-logging",
+            "version": "3.3.0.Final",
+            "purl": "pkg:maven/org.jboss.logging/jboss-logging@3.3.0.Final",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/jboss-logging-3.3.0.Final.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "4518fbb4-d4b5-486d-a0a8-e8c5ed29bc48",
+            "type": "library",
+            "group": "org.atteo",
+            "name": "evo-inflector",
+            "version": "1.2.1",
+            "purl": "pkg:maven/org.atteo/evo-inflector@1.2.1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/evo-inflector-1.2.1.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "db242fbd-9ab7-4550-adb5-cacffe05fa89",
+            "type": "library",
+            "group": "org.slf4j",
+            "name": "slf4j-api",
+            "version": "1.7.22",
+            "purl": "pkg:maven/org.slf4j/slf4j-api@1.7.22",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/slf4j-api-1.7.22.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "a20e3cce-e1ed-4b0d-b1a9-511a22ecb53c",
+            "type": "library",
+            "group": "org.springframework.cloud",
+            "name": "spring-cloud-starter",
+            "version": "1.1.6.RELEASE",
+            "purl": "pkg:maven/org.springframework.cloud/spring-cloud-starter@1.1.6.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-cloud-starter-1.1.6.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "663ad295-c646-4ab0-886d-eb153dfd0d0f",
+            "type": "library",
+            "group": "org.hibernate",
+            "name": "hibernate-validator",
+            "version": "5.2.4.Final",
+            "purl": "pkg:maven/org.hibernate/hibernate-validator@5.2.4.Final",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/hibernate-validator-5.2.4.Final.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "b3cf69ce-7b53-450a-ba4e-7327fc47bc0a",
+            "type": "library",
+            "group": "org.springframework.boot",
+            "name": "spring-boot-starter-actuator",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-boot-starter-actuator-1.4.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "b755d9c8-fa14-4541-bdab-4e57c170d645",
+            "type": "library",
+            "group": "org.springframework.boot",
+            "name": "spring-boot-actuator",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot-actuator@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-boot-actuator-1.4.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "f810defb-d860-4e58-ae2b-c06fa25dbcb3",
+            "type": "library",
+            "group": "org.springframework.cloud",
+            "name": "spring-cloud-commons",
+            "version": "1.1.6.RELEASE",
+            "purl": "pkg:maven/org.springframework.cloud/spring-cloud-commons@1.1.6.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-cloud-commons-1.1.6.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "c5a297d0-92ed-4302-8414-2bba71848229",
+            "type": "library",
+            "group": "org.slf4j",
+            "name": "jcl-over-slf4j",
+            "version": "1.7.22",
+            "purl": "pkg:maven/org.slf4j/jcl-over-slf4j@1.7.22",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/jcl-over-slf4j-1.7.22.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "1a75f2e7-44ce-4cd7-907d-77c56529e024",
+            "type": "library",
+            "group": "org.springframework.boot",
+            "name": "spring-boot-starter",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot-starter@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-boot-starter-1.4.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "87b78a0b-f04c-4b45-933a-7f58dfc9aa23",
+            "type": "library",
+            "group": "org.springframework.data",
+            "name": "spring-data-commons",
+            "version": "1.12.7.RELEASE",
+            "purl": "pkg:maven/org.springframework.data/spring-data-commons@1.12.7.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-data-commons-1.12.7.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "fa6fee5e-65ea-40ba-821c-5f6bac573236",
+            "type": "library",
+            "group": "io.zipkin.java",
+            "name": "zipkin",
+            "version": "1.16.2",
+            "purl": "pkg:maven/io.zipkin.java/zipkin@1.16.2",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/zipkin-1.16.2.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "a9f08ae1-f46f-41a1-8708-a6e45c710def",
+            "type": "library",
+            "group": "io.prometheus",
+            "name": "simpleclient_common",
+            "version": "0.0.21",
+            "purl": "pkg:maven/io.prometheus/simpleclient_common@0.0.21",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/simpleclient_common-0.0.21.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "4bc3f6df-c5e5-4c3f-ab0b-278095496e5d",
+            "type": "library",
+            "group": "org.springframework.boot",
+            "name": "spring-boot-starter-data-mongodb",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-data-mongodb@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-boot-starter-data-mongodb-1.4.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "19e640fd-88cf-4f8b-a1d8-e3e6afe415a6",
+            "type": "library",
+            "group": "org.yaml",
+            "name": "snakeyaml",
+            "version": "1.17",
+            "purl": "pkg:maven/org.yaml/snakeyaml@1.17",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/snakeyaml-1.17.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "78f235d1-39c2-4267-a6f5-56e8630c0c5a",
+            "type": "library",
+            "group": "org.springframework.boot",
+            "name": "spring-boot-starter-aop",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-aop@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-boot-starter-aop-1.4.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "12e0401f-18bc-450e-9525-19a0e41551f8",
+            "type": "library",
+            "group": "com.fasterxml.jackson.core",
+            "name": "jackson-annotations",
+            "version": "2.8.6",
+            "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.8.6",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/jackson-annotations-2.8.6.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "f3938606-2ade-4b35-b5af-1977f6b7fa36",
+            "type": "library",
+            "group": "org.springframework.cloud",
+            "name": "spring-cloud-starter-zipkin",
+            "version": "1.1.0.RELEASE",
+            "purl": "pkg:maven/org.springframework.cloud/spring-cloud-starter-zipkin@1.1.0.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-cloud-starter-zipkin-1.1.0.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "a7be620f-4dfb-41a5-ad73-f9810a49adef",
+            "type": "library",
+            "group": "io.zipkin.reporter",
+            "name": "zipkin-sender-urlconnection",
+            "version": "0.6.9",
+            "purl": "pkg:maven/io.zipkin.reporter/zipkin-sender-urlconnection@0.6.9",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/zipkin-sender-urlconnection-0.6.9.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "fdad73f8-a38e-4e5d-9780-30a98e15ac55",
+            "type": "library",
+            "group": "ch.qos.logback",
+            "name": "logback-core",
+            "version": "1.1.9",
+            "purl": "pkg:maven/ch.qos.logback/logback-core@1.1.9",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/logback-core-1.1.9.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "1edaa75b-85bf-4eb9-93d5-c83caa31a3a0",
+            "type": "library",
+            "group": "io.prometheus",
+            "name": "simpleclient_spring_boot",
+            "version": "0.0.21",
+            "purl": "pkg:maven/io.prometheus/simpleclient_spring_boot@0.0.21",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/simpleclient_spring_boot-0.0.21.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "7af4c7aa-321d-4b25-bb85-ed388b5dd896",
+            "type": "library",
+            "group": "org.springframework.data",
+            "name": "spring-data-rest-webmvc",
+            "version": "2.5.7.RELEASE",
+            "purl": "pkg:maven/org.springframework.data/spring-data-rest-webmvc@2.5.7.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-data-rest-webmvc-2.5.7.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "d2167523-c82b-47f5-bf0b-46aacb60fad8",
+            "type": "library",
+            "group": "org.springframework.boot",
+            "name": "spring-boot-starter-tomcat",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-boot-starter-tomcat-1.4.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "ea32cacf-1bf1-4596-b6cf-954cbc99c466",
+            "type": "library",
+            "group": "javax.validation",
+            "name": "validation-api",
+            "version": "1.1.0.Final",
+            "purl": "pkg:maven/javax.validation/validation-api@1.1.0.Final",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/validation-api-1.1.0.Final.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "ce3f7f4b-d8d8-493d-8a49-e9c600acbd03",
+            "type": "library",
+            "group": "org.springframework.data",
+            "name": "spring-data-rest-hal-browser",
+            "version": "2.5.7.RELEASE",
+            "purl": "pkg:maven/org.springframework.data/spring-data-rest-hal-browser@2.5.7.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-data-rest-hal-browser-2.5.7.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "f810f845-daba-4384-b3d0-76d184395e26",
+            "type": "library",
+            "group": "ch.qos.logback",
+            "name": "logback-classic",
+            "version": "1.1.9",
+            "purl": "pkg:maven/ch.qos.logback/logback-classic@1.1.9",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/logback-classic-1.1.9.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "528ca60b-bb80-4316-828f-2639396f558b",
+            "type": "library",
+            "group": "com.fasterxml.jackson.core",
+            "name": "jackson-databind",
+            "version": "2.8.6",
+            "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.8.6",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/jackson-databind-2.8.6.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "fcc99af4-3a67-4fba-ac0d-e09724408002",
+            "type": "library",
+            "group": "com.fasterxml.jackson.core",
+            "name": "jackson-core",
+            "version": "2.8.6",
+            "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.8.6",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/jackson-core-2.8.6.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "da55fd0d-6c97-4f32-a8d4-3dcc89593bbe",
+            "type": "library",
+            "group": "io.prometheus",
+            "name": "simpleclient_servlet",
+            "version": "0.0.21",
+            "purl": "pkg:maven/io.prometheus/simpleclient_servlet@0.0.21",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/simpleclient_servlet-0.0.21.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "79ab503c-f7d9-44c5-b596-adf2652d0a50",
+            "type": "library",
+            "group": "org.springframework.boot",
+            "name": "spring-boot-starter-data-rest",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-data-rest@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-boot-starter-data-rest-1.4.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "c48dc812-8648-42be-be04-0c7e71e89154",
+            "type": "library",
+            "group": "org.springframework.cloud",
+            "name": "spring-cloud-sleuth-zipkin",
+            "version": "1.1.0.RELEASE",
+            "purl": "pkg:maven/org.springframework.cloud/spring-cloud-sleuth-zipkin@1.1.0.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-cloud-sleuth-zipkin-1.1.0.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "ba1b18bf-0084-4e9c-8f4d-9d3c088be7ed",
+            "type": "library",
+            "group": "org.bouncycastle",
+            "name": "bcpkix",
+            "version": "1.55.0.0",
+            "purl": "pkg:maven/org.bouncycastle/bcpkix@1.55.0.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/bcpkix-jdk15on-1.55.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "aae8c582-1116-48de-901d-838ee78720d6",
+            "type": "library",
+            "group": "io.zipkin.reporter",
+            "name": "zipkin-reporter",
+            "version": "0.6.9",
+            "purl": "pkg:maven/io.zipkin.reporter/zipkin-reporter@0.6.9",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/zipkin-reporter-0.6.9.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "35a777cc-23ba-44a0-a7e7-9e6e7407a302",
+            "type": "library",
+            "group": "org.springframework.data",
+            "name": "spring-data-rest-core",
+            "version": "2.5.7.RELEASE",
+            "purl": "pkg:maven/org.springframework.data/spring-data-rest-core@2.5.7.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-data-rest-core-2.5.7.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "6e4295d2-55b3-4e7c-bcf7-c685b74d7ec1",
+            "type": "library",
+            "group": "org.springframework.boot",
+            "name": "spring-boot",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-boot-1.4.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "63becd96-93d3-4632-82c9-860e84d4266e",
+            "type": "library",
+            "group": "org.slf4j",
+            "name": "log4j-over-slf4j",
+            "version": "1.7.22",
+            "purl": "pkg:maven/org.slf4j/log4j-over-slf4j@1.7.22",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/log4j-over-slf4j-1.7.22.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "67f469ad-44e9-4f57-8ef3-90a73b9e2221",
+            "type": "library",
+            "group": "io.prometheus",
+            "name": "simpleclient_hotspot",
+            "version": "0.0.21",
+            "purl": "pkg:maven/io.prometheus/simpleclient_hotspot@0.0.21",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/simpleclient_hotspot-0.0.21.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "4c432fab-a92d-4780-a367-11fb8846c666",
+            "type": "library",
+            "group": "org.mongodb",
+            "name": "bson",
+            "version": "3.2.2",
+            "purl": "pkg:maven/org.mongodb/bson@3.2.2",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/bson-3.2.2.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "3664a0b8-47c4-41ad-9cc5-cc725e0c708e",
+            "type": "library",
+            "group": "org.springframework.boot",
+            "name": "spring-boot-starter-logging",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-boot-starter-logging-1.4.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "58647b04-becf-4847-858f-6e96002bd8f5",
+            "type": "library",
+            "group": "org.springframework.data",
+            "name": "spring-data-mongodb",
+            "version": "1.9.7.RELEASE",
+            "purl": "pkg:maven/org.springframework.data/spring-data-mongodb@1.9.7.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-data-mongodb-1.9.7.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "73706a26-3e9e-4e14-a033-f142a87966ea",
+            "type": "library",
+            "group": "org.springframework.cloud",
+            "name": "spring-cloud-starter-sleuth",
+            "version": "1.1.0.RELEASE",
+            "purl": "pkg:maven/org.springframework.cloud/spring-cloud-starter-sleuth@1.1.0.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-cloud-starter-sleuth-1.1.0.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "8cc3be09-810a-4e04-bde0-596837bea673",
+            "type": "library",
+            "group": "org.springframework.cloud",
+            "name": "spring-cloud-sleuth-core",
+            "version": "1.1.0.RELEASE",
+            "purl": "pkg:maven/org.springframework.cloud/spring-cloud-sleuth-core@1.1.0.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-cloud-sleuth-core-1.1.0.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "291f1f2f-96dc-4b5d-af80-6788d6d445d0",
+            "type": "library",
+            "group": "org.slf4j",
+            "name": "jul-to-slf4j",
+            "version": "1.7.22",
+            "purl": "pkg:maven/org.slf4j/jul-to-slf4j@1.7.22",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/jul-to-slf4j-1.7.22.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "30c51063-c404-406f-aec3-335342e22935",
+            "type": "library",
+            "group": "org.springframework.boot",
+            "name": "spring-boot-autoconfigure",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-boot-autoconfigure-1.4.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "5f1ec5fc-eecd-4292-91c1-1ffc8eab74fb",
+            "type": "library",
+            "group": "org.bouncycastle",
+            "name": "bcprov",
+            "version": "1.55.0",
+            "purl": "pkg:maven/org.bouncycastle/bcprov@1.55.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/bcprov-jdk15on-1.55.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "42e64961-d3bd-4236-86a3-170213111fab",
+            "type": "library",
+            "group": "org.mongodb",
+            "name": "mongodb-driver-core",
+            "version": "3.2.2",
+            "purl": "pkg:maven/org.mongodb/mongodb-driver-core@3.2.2",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/mongodb-driver-core-3.2.2.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "cd99ba00-e687-4f3d-a767-45a63228d682",
+            "type": "library",
+            "group": "org.springframework.plugin",
+            "name": "spring-plugin-core",
+            "version": "1.2.0.RELEASE",
+            "purl": "pkg:maven/org.springframework.plugin/spring-plugin-core@1.2.0.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-plugin-core-1.2.0.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "d816ff1e-bea1-46de-badf-a2b25e1d9f9a",
+            "type": "library",
+            "group": "io.prometheus",
+            "name": "simpleclient",
+            "version": "0.0.21",
+            "purl": "pkg:maven/io.prometheus/simpleclient@0.0.21",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/simpleclient-0.0.21.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "1a916f35-ee87-4adb-9e4e-90aebfcf8c27",
+            "type": "library",
+            "group": "com.fasterxml",
+            "name": "classmate",
+            "version": "1.3.3",
+            "purl": "pkg:maven/com.fasterxml/classmate@1.3.3",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/classmate-1.3.3.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "32ba1813-be99-485e-86a1-7410c12e6626",
+            "type": "library",
+            "group": "org.springframework.hateoas",
+            "name": "spring-hateoas",
+            "version": "0.20.0.RELEASE",
+            "purl": "pkg:maven/org.springframework.hateoas/spring-hateoas@0.20.0.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-hateoas-0.20.0.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "f4c62d45-201c-4aaa-bb18-12d9d59f6725",
+            "type": "library",
+            "group": "org.springframework.boot",
+            "name": "spring-boot-starter-web",
+            "version": "1.4.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-web@1.4.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-boot-starter-web-1.4.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "0be8f21f-0e52-46ec-808c-18409f13f69d",
+            "type": "library",
+            "group": "org.springframework.security",
+            "name": "spring-security-rsa",
+            "version": "1.0.3.BUILD-SNAPSHOT",
+            "purl": "pkg:maven/org.springframework.security/spring-security-rsa@1.0.3.BUILD-SNAPSHOT",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-security-rsa-1.0.3.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "28b2ca0e-6846-4ef9-84d8-8e3fbf971a73",
+            "type": "library",
+            "group": "org.springframework.cloud",
+            "name": "spring-cloud-context",
+            "version": "1.1.6.RELEASE",
+            "purl": "pkg:maven/org.springframework.cloud/spring-cloud-context@1.1.6.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-cloud-context-1.1.6.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "0d3e30f2-9cf5-4661-a18b-1184c3ff0566",
+            "type": "library",
+            "group": "io.zipkin.java",
+            "name": "zipkin",
+            "version": "1.16.2",
+            "purl": "pkg:maven/io.zipkin.java/zipkin@1.16.2",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:4dbfbd53514c85031dbaad72469de7a153c23ca3601d188f8a3796839cca9f49"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "7"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/zipkin-1.16.2-tests.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "7406467c-eb84-4a97-88b8-5a58cfd5c3ef",
+            "type": "library",
+            "group": "org.aspectj",
+            "name": "aspectjrt",
+            "version": "1.8.9",
+            "purl": "pkg:maven/org.aspectj/aspectjrt@1.8.9",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/aspectjrt-1.8.9.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "7b8e581a-0e5b-4a3d-b587-eefcc5708271",
+            "type": "library",
+            "group": "org.springframework.security",
+            "name": "spring-security-crypto",
+            "version": "4.1.4.RELEASE",
+            "purl": "pkg:maven/org.springframework.security/spring-security-crypto@4.1.4.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-security-crypto-4.1.4.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "1429f5f1-a982-4a7a-963e-5976e3436455",
+            "type": "library",
+            "group": "org.springframework",
+            "name": "spring-tx",
+            "version": "4.3.6.RELEASE",
+            "purl": "pkg:maven/org.springframework/spring-tx@4.3.6.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-tx-4.3.6.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "29c5a2fb-b092-4295-a5c2-f47b5d969a2f",
+            "type": "library",
+            "group": "org.springframework",
+            "name": "spring-webmvc",
+            "version": "4.3.6.RELEASE",
+            "purl": "pkg:maven/org.springframework/spring-webmvc@4.3.6.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-webmvc-4.3.6.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "330021d9-cf90-4442-bacf-8beeb5c83ad7",
+            "type": "library",
+            "group": "org.springframework",
+            "name": "spring-beans",
+            "version": "4.3.6.RELEASE",
+            "purl": "pkg:maven/org.springframework/spring-beans@4.3.6.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-beans-4.3.6.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "84b3a9df-4930-4f4d-bbc7-15691a841bfe",
+            "type": "library",
+            "group": "org.springframework",
+            "name": "spring-web",
+            "version": "4.3.6.RELEASE",
+            "purl": "pkg:maven/org.springframework/spring-web@4.3.6.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-web-4.3.6.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "3e24ab87-c706-40f9-8f76-539607a80c6b",
+            "type": "library",
+            "group": "org.aspectj",
+            "name": "aspectjweaver",
+            "version": "1.8.9",
+            "purl": "pkg:maven/org.aspectj/aspectjweaver@1.8.9",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/aspectjweaver-1.8.9.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "295e5a8b-804c-445a-9da2-078c84c247eb",
+            "type": "library",
+            "group": "org.springframework",
+            "name": "spring-aop",
+            "version": "4.3.6.RELEASE",
+            "purl": "pkg:maven/org.springframework/spring-aop@4.3.6.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-aop-4.3.6.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "c2e6812b-c64f-4a79-b120-d5ea062fb5eb",
+            "type": "library",
+            "group": "org.mongodb",
+            "name": "mongodb-driver",
+            "version": "3.2.2",
+            "purl": "pkg:maven/org.mongodb/mongodb-driver@3.2.2",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/mongodb-driver-3.2.2.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "22a04e5a-360f-4ac6-84d3-d744ef066e0c",
+            "type": "library",
+            "group": "org.springframework",
+            "name": "spring-expression",
+            "version": "4.3.6.RELEASE",
+            "purl": "pkg:maven/org.springframework/spring-expression@4.3.6.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-expression-4.3.6.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "de270935-250b-4666-b03a-860773db3437",
+            "type": "library",
+            "group": "org.springframework",
+            "name": "spring-core",
+            "version": "4.3.6.RELEASE",
+            "purl": "pkg:maven/org.springframework/spring-core@4.3.6.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-core-4.3.6.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "9dd2a4b6-4d2f-4611-aa4b-55f373523a42",
+            "type": "library",
+            "group": "org.apache.tomcat.embed",
+            "name": "tomcat-embed-websocket",
+            "version": "8.5.11",
+            "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@8.5.11",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/tomcat-embed-websocket-8.5.11.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "82b4baa1-0c1c-4132-931e-0405f307a33e",
+            "type": "library",
+            "group": "org.apache.tomcat.embed",
+            "name": "tomcat-embed-el",
+            "version": "8.5.11",
+            "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@8.5.11",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/tomcat-embed-el-8.5.11.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "bfb7a62b-6018-4cd3-91c0-477eb8222b8b",
+            "type": "library",
+            "group": "org.springframework",
+            "name": "spring-context",
+            "version": "4.3.6.RELEASE",
+            "purl": "pkg:maven/org.springframework/spring-context@4.3.6.RELEASE",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/spring-context-4.3.6.RELEASE.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "b954a33b-f84e-492c-8490-a6789ebdb6dc",
+            "type": "library",
+            "group": "org.apache.tomcat.embed",
+            "name": "tomcat-embed-core",
+            "version": "8.5.11",
+            "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@8.5.11",
+            "properties": [
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/usr/src/app/app.jar:BOOT-INF/lib/tomcat-embed-core-8.5.11.jar"
+                }
+            ]
+        },
+        {
+            "bom-ref": "40b10a33-28b9-487a-946e-31a47df52645",
+            "type": "library",
+            "name": "libssh2",
+            "version": "1.7.0-r0",
+            "purl": "pkg:apk/alpine/libssh2@1.7.0-r0?distro=alpine-3.4.6&upstream=libssh2&upstream-version=1.7.0-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:3b5f133fcc3b7936b27a9f11af2b8783d7f92c1fff681493709ebc3896d34349"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "9"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "beed810d-62ee-4fe2-bb7c-0c0395512603",
+            "type": "library",
+            "name": "libcurl",
+            "version": "7.60.0-r1",
+            "purl": "pkg:apk/alpine/libcurl@7.60.0-r1?distro=alpine-3.4.6&upstream=curl&upstream-version=7.60.0-r1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:3b5f133fcc3b7936b27a9f11af2b8783d7f92c1fff681493709ebc3896d34349"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "9"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "72ecea33-ee20-4146-90ee-2203b0177c57",
+            "type": "library",
+            "name": "curl",
+            "version": "7.60.0-r1",
+            "purl": "pkg:apk/alpine/curl@7.60.0-r1?distro=alpine-3.4.6&upstream=curl&upstream-version=7.60.0-r1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:3b5f133fcc3b7936b27a9f11af2b8783d7f92c1fff681493709ebc3896d34349"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "9"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "71f4c6aa-00dd-4eeb-ada9-92a4ea955a58",
+            "type": "library",
+            "name": "wget",
+            "version": "1.18-r3",
+            "purl": "pkg:apk/alpine/wget@1.18-r3?distro=alpine-3.4.6&upstream=wget&upstream-version=1.18-r3",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:3b5f133fcc3b7936b27a9f11af2b8783d7f92c1fff681493709ebc3896d34349"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "9"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "ref": "bfe11318-7a25-4a5d-8777-ee34a53b6f5b",
+            "dependsOn": [
+                "23cefc52-ef5b-4b6d-8e89-c1534fdad9db"
+            ]
+        }
+    ]
+}

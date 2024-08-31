@@ -1,0 +1,1154 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:6698f733-d310-47f7-b7ef-2ef2d973af01",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2024-07-18T11:06:29Z",
+        "tools": {
+            "components": [
+                {
+                    "type": "application",
+                    "group": "sysdig",
+                    "name": "sysdig-image-sbom-extractor",
+                    "version": "v0.0.0-20240703095133-74394e9c09bd"
+                }
+            ]
+        },
+        "component": {
+            "bom-ref": "ec5fbddb-c350-445d-896a-42886e80ea3b",
+            "type": "container",
+            "name": "sha256:8a4f2817b3f957a54ca71cffb5402e82f339ccb9c3443861903e8f0e21ec5729"
+        }
+    },
+    "components": [
+        {
+            "bom-ref": "d5616034-4497-4f15-838a-a9957ae66a42",
+            "type": "operating-system",
+            "name": "alpine",
+            "version": "3.16.0"
+        },
+        {
+            "bom-ref": "873ff93e-7732-4eb5-b328-494ba34dfa95",
+            "type": "library",
+            "name": "alpine-baselayout-data",
+            "version": "3.2.0-r20",
+            "purl": "pkg:apk/alpine/alpine-baselayout-data@3.2.0-r20?distro=alpine-3.16.0&upstream=alpine-baselayout&upstream-version=3.2.0-r20",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "cea26100-02a1-4d8a-a0a9-3fc83649994f",
+            "type": "library",
+            "name": "musl",
+            "version": "1.2.3-r0",
+            "purl": "pkg:apk/alpine/musl@1.2.3-r0?distro=alpine-3.16.0&upstream=musl&upstream-version=1.2.3-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "0df711e5-2463-4fe5-816a-a71ae51c5322",
+            "type": "library",
+            "name": "busybox",
+            "version": "1.35.0-r13",
+            "purl": "pkg:apk/alpine/busybox@1.35.0-r13?distro=alpine-3.16.0&upstream=busybox&upstream-version=1.35.0-r13",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "dc4cb8e8-e89d-4000-a6a9-25d82d184cd9",
+            "type": "library",
+            "name": "alpine-baselayout",
+            "version": "3.2.0-r20",
+            "purl": "pkg:apk/alpine/alpine-baselayout@3.2.0-r20?distro=alpine-3.16.0&upstream=alpine-baselayout&upstream-version=3.2.0-r20",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "6f9b7c14-71cc-42b3-ac6b-b0cc18dd6d40",
+            "type": "library",
+            "name": "alpine-keys",
+            "version": "2.4-r1",
+            "purl": "pkg:apk/alpine/alpine-keys@2.4-r1?distro=alpine-3.16.0&upstream=alpine-keys&upstream-version=2.4-r1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "3f9bb216-9d32-45a6-a71b-120e18c04248",
+            "type": "library",
+            "name": "ca-certificates-bundle",
+            "version": "20211220-r0",
+            "purl": "pkg:apk/alpine/ca-certificates-bundle@20211220-r0?distro=alpine-3.16.0&upstream=ca-certificates&upstream-version=20211220-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "22164a3e-1be3-4d02-8f74-8b44a0470a99",
+            "type": "library",
+            "name": "libcrypto1.1",
+            "version": "1.1.1o-r0",
+            "purl": "pkg:apk/alpine/libcrypto1.1@1.1.1o-r0?distro=alpine-3.16.0&upstream=openssl&upstream-version=1.1.1o-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "96bb14bc-3ade-4dd9-9a8d-8099280b4a43",
+            "type": "library",
+            "name": "libssl1.1",
+            "version": "1.1.1o-r0",
+            "purl": "pkg:apk/alpine/libssl1.1@1.1.1o-r0?distro=alpine-3.16.0&upstream=openssl&upstream-version=1.1.1o-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "780f6f14-4070-4743-93bc-32fd0b8d0692",
+            "type": "library",
+            "name": "ssl_client",
+            "version": "1.35.0-r13",
+            "purl": "pkg:apk/alpine/ssl_client@1.35.0-r13?distro=alpine-3.16.0&upstream=busybox&upstream-version=1.35.0-r13",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "8cb9957c-6271-443c-8a0e-baa2a8782fbe",
+            "type": "library",
+            "name": "zlib",
+            "version": "1.2.12-r1",
+            "purl": "pkg:apk/alpine/zlib@1.2.12-r1?distro=alpine-3.16.0&upstream=zlib&upstream-version=1.2.12-r1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "15e12401-02e4-4e19-83d0-7786969a9f62",
+            "type": "library",
+            "name": "apk-tools",
+            "version": "2.12.9-r3",
+            "purl": "pkg:apk/alpine/apk-tools@2.12.9-r3?distro=alpine-3.16.0&upstream=apk-tools&upstream-version=2.12.9-r3",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "7b54dc98-d917-4f3d-aee3-2339afb86d93",
+            "type": "library",
+            "name": "scanelf",
+            "version": "1.3.4-r0",
+            "purl": "pkg:apk/alpine/scanelf@1.3.4-r0?distro=alpine-3.16.0&upstream=pax-utils&upstream-version=1.3.4-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "d561e774-6774-4a24-958e-cb7de6641366",
+            "type": "library",
+            "name": "musl-utils",
+            "version": "1.2.3-r0",
+            "purl": "pkg:apk/alpine/musl-utils@1.2.3-r0?distro=alpine-3.16.0&upstream=musl&upstream-version=1.2.3-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "c73b00ed-2ba3-4fc5-9be8-008f0081dac5",
+            "type": "library",
+            "name": "libc-utils",
+            "version": "0.7.2-r3",
+            "purl": "pkg:apk/alpine/libc-utils@0.7.2-r3?distro=alpine-3.16.0&upstream=libc-dev&upstream-version=0.7.2-r3",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "0"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "5ca43cbf-cea0-4ca5-b94e-41da1ac0e053",
+            "type": "library",
+            "name": "ca-certificates",
+            "version": "20211220-r0",
+            "purl": "pkg:apk/alpine/ca-certificates@20211220-r0?distro=alpine-3.16.0&upstream=ca-certificates&upstream-version=20211220-r0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:6e4fafc96eab0d7c67f8310145f86496dc0c36baf06c4e07b9583179f102a537"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "1"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/lib/apk/db/installed"
+                }
+            ]
+        },
+        {
+            "bom-ref": "78e4421d-00a2-401e-9086-229300e2dd67",
+            "type": "library",
+            "name": "protobuf",
+            "version": "v1.5.2",
+            "purl": "pkg:golang/github.com/golang/protobuf@v1.5.2",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f905554bc41bc44c7c8282d23c82aadb19f3075e7daaa23baca199e80922a183"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/bin/grpc_health_probe"
+                }
+            ]
+        },
+        {
+            "bom-ref": "0bded988-6e32-46eb-9af5-11852904fc8b",
+            "type": "library",
+            "name": "v2",
+            "version": "v2.0.0",
+            "purl": "pkg:golang/github.com/spiffe/go-spiffe/v2@v2.0.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f905554bc41bc44c7c8282d23c82aadb19f3075e7daaa23baca199e80922a183"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/bin/grpc_health_probe"
+                }
+            ]
+        },
+        {
+            "bom-ref": "35121a84-9212-4eaf-8177-d56a4f63890f",
+            "type": "library",
+            "name": "errs",
+            "version": "v1.3.0",
+            "purl": "pkg:golang/github.com/zeebo/errs@v1.3.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f905554bc41bc44c7c8282d23c82aadb19f3075e7daaa23baca199e80922a183"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/bin/grpc_health_probe"
+                }
+            ]
+        },
+        {
+            "bom-ref": "04155961-1567-4e4f-9d9e-b37bcff9e954",
+            "type": "library",
+            "name": "crypto",
+            "version": "v0.0.0-20220408190544-5352b0902921",
+            "purl": "pkg:golang/golang.org/x/crypto@v0.0.0-20220408190544-5352b0902921",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f905554bc41bc44c7c8282d23c82aadb19f3075e7daaa23baca199e80922a183"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/bin/grpc_health_probe"
+                }
+            ]
+        },
+        {
+            "bom-ref": "e8800043-fb5e-4247-ae51-4a73b64536db",
+            "type": "library",
+            "name": "net",
+            "version": "v0.0.0-20220407224826-aac1ed45d8e3",
+            "purl": "pkg:golang/golang.org/x/net@v0.0.0-20220407224826-aac1ed45d8e3",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f905554bc41bc44c7c8282d23c82aadb19f3075e7daaa23baca199e80922a183"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/bin/grpc_health_probe"
+                }
+            ]
+        },
+        {
+            "bom-ref": "23d82b98-26d9-4e8b-8b07-d8a09729ac2f",
+            "type": "library",
+            "name": "sys",
+            "version": "v0.0.0-20220408201424-a24fb2fb8a0f",
+            "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20220408201424-a24fb2fb8a0f",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f905554bc41bc44c7c8282d23c82aadb19f3075e7daaa23baca199e80922a183"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/bin/grpc_health_probe"
+                }
+            ]
+        },
+        {
+            "bom-ref": "27b2deb4-90f5-4992-bc90-e9b57f60c235",
+            "type": "library",
+            "name": "text",
+            "version": "v0.3.7",
+            "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f905554bc41bc44c7c8282d23c82aadb19f3075e7daaa23baca199e80922a183"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/bin/grpc_health_probe"
+                }
+            ]
+        },
+        {
+            "bom-ref": "ce535450-4534-422c-bb04-7e87cd25a9e1",
+            "type": "library",
+            "name": "genproto",
+            "version": "v0.0.0-20220407144326-9054f6ed7bac",
+            "purl": "pkg:golang/google.golang.org/genproto@v0.0.0-20220407144326-9054f6ed7bac",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f905554bc41bc44c7c8282d23c82aadb19f3075e7daaa23baca199e80922a183"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/bin/grpc_health_probe"
+                }
+            ]
+        },
+        {
+            "bom-ref": "02d4c327-278a-453f-aed0-c268a49f3107",
+            "type": "library",
+            "name": "grpc",
+            "version": "v1.45.0",
+            "purl": "pkg:golang/google.golang.org/grpc@v1.45.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f905554bc41bc44c7c8282d23c82aadb19f3075e7daaa23baca199e80922a183"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/bin/grpc_health_probe"
+                }
+            ]
+        },
+        {
+            "bom-ref": "062b0056-ce0f-405d-9f22-d7a15b82edb1",
+            "type": "library",
+            "name": "protobuf",
+            "version": "v1.28.0",
+            "purl": "pkg:golang/google.golang.org/protobuf@v1.28.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f905554bc41bc44c7c8282d23c82aadb19f3075e7daaa23baca199e80922a183"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/bin/grpc_health_probe"
+                }
+            ]
+        },
+        {
+            "bom-ref": "74bf18b6-f634-47c1-9aa7-a493e477f8c9",
+            "type": "library",
+            "name": "go-jose.v2",
+            "version": "v2.6.0",
+            "purl": "pkg:golang/gopkg.in/square/go-jose.v2@v2.6.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:f905554bc41bc44c7c8282d23c82aadb19f3075e7daaa23baca199e80922a183"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "2"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/bin/grpc_health_probe"
+                }
+            ]
+        },
+        {
+            "bom-ref": "c454826b-b24d-4e4f-bcd9-c633c3aa356e",
+            "type": "library",
+            "name": "go",
+            "version": "v0.99.0",
+            "purl": "pkg:golang/cloud.google.com/go@v0.99.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "02600cb4-7b7f-4eeb-9c3b-3ca9980c2fd7",
+            "type": "library",
+            "name": "monitoring",
+            "version": "v1.1.0",
+            "purl": "pkg:golang/cloud.google.com/go/monitoring@v1.1.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "1dee609f-570d-4c8e-af51-57ebfce115de",
+            "type": "library",
+            "name": "profiler",
+            "version": "v0.1.1",
+            "purl": "pkg:golang/cloud.google.com/go/profiler@v0.1.1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "a9f119f2-b3ae-47f7-8c67-3db8d8529fd1",
+            "type": "library",
+            "name": "trace",
+            "version": "v1.0.0",
+            "purl": "pkg:golang/cloud.google.com/go/trace@v1.0.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "04ede26e-0dd2-4302-addf-1b3e968b1462",
+            "type": "library",
+            "name": "jaeger",
+            "version": "v0.2.1",
+            "purl": "pkg:golang/contrib.go.opencensus.io/exporter/jaeger@v0.2.1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "7dddd9b5-a9b0-4468-b986-9f71c64925db",
+            "type": "library",
+            "name": "stackdriver",
+            "version": "v0.13.12",
+            "purl": "pkg:golang/contrib.go.opencensus.io/exporter/stackdriver@v0.13.12",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "cb8b6b77-903f-42bd-868f-a4486e0f7634",
+            "type": "library",
+            "name": "aws-sdk-go",
+            "version": "v1.37.0",
+            "purl": "pkg:golang/github.com/aws/aws-sdk-go@v1.37.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "0801d976-2c19-4198-a77f-bec4fb07b4f6",
+            "type": "library",
+            "name": "opencensus-proto",
+            "version": "v0.3.0",
+            "purl": "pkg:golang/github.com/census-instrumentation/opencensus-proto@v0.3.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "159c9670-1722-4b71-a631-dabb780d49f5",
+            "type": "library",
+            "name": "groupcache",
+            "version": "v0.0.0-20200121045136-8c9f03a8e57e",
+            "purl": "pkg:golang/github.com/golang/groupcache@v0.0.0-20200121045136-8c9f03a8e57e",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "059f1872-c2a3-471b-a26b-58e3c57e0f0c",
+            "type": "library",
+            "name": "protobuf",
+            "version": "v1.5.2",
+            "purl": "pkg:golang/github.com/golang/protobuf@v1.5.2",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "84c17b7f-f911-4bc9-ac83-3f129c9c7f07",
+            "type": "library",
+            "name": "go-cmp",
+            "version": "v0.5.6",
+            "purl": "pkg:golang/github.com/google/go-cmp@v0.5.6",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "0b28f1fb-3615-4055-8f39-8bb3562bb643",
+            "type": "library",
+            "name": "pprof",
+            "version": "v0.0.0-20211008130755-947d60d73cc0",
+            "purl": "pkg:golang/github.com/google/pprof@v0.0.0-20211008130755-947d60d73cc0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "154e8855-0a77-4351-8326-5276b01c4691",
+            "type": "library",
+            "name": "v2",
+            "version": "v2.1.1",
+            "purl": "pkg:golang/github.com/googleapis/gax-go/v2@v2.1.1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "8f72af2b-481c-42e7-a632-ae388114e1fd",
+            "type": "library",
+            "name": "go-jmespath",
+            "version": "v0.4.0",
+            "purl": "pkg:golang/github.com/jmespath/go-jmespath@v0.4.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "d350cc45-acd6-4a5f-ac16-4d4e5b26d209",
+            "type": "library",
+            "name": "prometheus",
+            "version": "v2.5.0+incompatible",
+            "purl": "pkg:golang/github.com/prometheus/prometheus@v2.5.0+incompatible",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "ea830198-14bd-43d0-a2d3-4266196b11ed",
+            "type": "library",
+            "name": "logrus",
+            "version": "v1.8.1",
+            "purl": "pkg:golang/github.com/sirupsen/logrus@v1.8.1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "d4478df4-a6ee-4bec-a317-222f9d8646dd",
+            "type": "library",
+            "name": "jaeger-client-go",
+            "version": "v2.25.0+incompatible",
+            "purl": "pkg:golang/github.com/uber/jaeger-client-go@v2.25.0+incompatible",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "42425302-d720-4dda-8e90-03a0fb076c0d",
+            "type": "library",
+            "name": "go.opencensus.io",
+            "version": "v0.23.0",
+            "purl": "pkg:golang/go.opencensus.io@v0.23.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "fa22bfbf-f33c-4a11-86b4-0ef3af9f1e50",
+            "type": "library",
+            "name": "net",
+            "version": "v0.0.0-20220403103023-749bd193bc2b",
+            "purl": "pkg:golang/golang.org/x/net@v0.0.0-20220403103023-749bd193bc2b",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "eef4dbfa-f9b1-48ae-8a84-975aae608cba",
+            "type": "library",
+            "name": "oauth2",
+            "version": "v0.0.0-20211104180415-d3ed0bb246c8",
+            "purl": "pkg:golang/golang.org/x/oauth2@v0.0.0-20211104180415-d3ed0bb246c8",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "af89a9c8-2544-43ad-869e-dbe9b58e3ab9",
+            "type": "library",
+            "name": "sync",
+            "version": "v0.0.0-20210220032951-036812b2e83c",
+            "purl": "pkg:golang/golang.org/x/sync@v0.0.0-20210220032951-036812b2e83c",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "707a2584-f3ec-4536-9106-761c4e19e052",
+            "type": "library",
+            "name": "sys",
+            "version": "v0.0.0-20211216021012-1d35b9e2eb4e",
+            "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20211216021012-1d35b9e2eb4e",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "a4b89773-e0ba-4525-b0bf-7e17130e6265",
+            "type": "library",
+            "name": "text",
+            "version": "v0.3.7",
+            "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "41a9029b-eb4f-4ab2-a272-7920bcd02fb3",
+            "type": "library",
+            "name": "api",
+            "version": "v0.61.0",
+            "purl": "pkg:golang/google.golang.org/api@v0.61.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "dacb50e3-1995-4015-8127-41e725ea65c3",
+            "type": "library",
+            "name": "genproto",
+            "version": "v0.0.0-20211206160659-862468c7d6e0",
+            "purl": "pkg:golang/google.golang.org/genproto@v0.0.0-20211206160659-862468c7d6e0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "7209a332-ed0b-4a91-833c-83071896824d",
+            "type": "library",
+            "name": "grpc",
+            "version": "v1.43.0",
+            "purl": "pkg:golang/google.golang.org/grpc@v1.43.0",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        },
+        {
+            "bom-ref": "e4e320f7-ca4f-4bbf-8b23-aabc95d88556",
+            "type": "library",
+            "name": "protobuf",
+            "version": "v1.27.1",
+            "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+            "properties": [
+                {
+                    "name": "sysdig:layer:digest",
+                    "value": "sha256:c5eab7b1af1226a58d0f4a72ec59a2a0177942f813f544ebc394c1383b93101e"
+                },
+                {
+                    "name": "sysdig:layer:index",
+                    "value": "4"
+                },
+                {
+                    "name": "sysdig:package:installPath",
+                    "value": "/src/shippingservice"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "ref": "ec5fbddb-c350-445d-896a-42886e80ea3b",
+            "dependsOn": [
+                "d5616034-4497-4f15-838a-a9957ae66a42"
+            ]
+        }
+    ]
+}

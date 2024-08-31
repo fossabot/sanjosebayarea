@@ -1,0 +1,2022 @@
+{
+    "result": {
+        "type": "dockerImage",
+        "metadata": {
+            "pullString": "alpine:3.18.0",
+            "imageId": "sha256:5e2b554c1c45d22c9d1aa836828828e320a26011b76c08631ac896cbc3625e3e",
+            "digest": "sha256:7fb0566f0f247789c92cfb75f8554fea183f9dbc10b50ee5bb0d4ac28b6d9965",
+            "baseOs": "alpine 3.18.0",
+            "size": 7617536,
+            "os": "linux",
+            "architecture": "amd64",
+            "layersCount": 1,
+            "createdAt": "2023-05-09T23:11:10.132147526Z"
+        },
+        "vulnTotalBySeverity": {
+            "critical": 3,
+            "high": 6,
+            "low": 0,
+            "medium": 32,
+            "negligible": 0
+        },
+        "fixableVulnTotalBySeverity": {
+            "critical": 3,
+            "high": 6,
+            "low": 0,
+            "medium": 32,
+            "negligible": 0
+        },
+        "runningVulnTotalBySeverity": {
+            "critical": 1,
+            "high": 0,
+            "low": 0,
+            "medium": 4,
+            "negligible": 0
+        },
+        "exploitsCount": 0,
+        "riskSpotlightEnabled": true,
+        "packages": [
+            {
+                "type": "os",
+                "name": "busybox",
+                "version": "1.36.0-r9",
+                "path": "/lib/apk/db/installed",
+                "suggestedFix": "1.36.1-r1",
+                "inUse": true,
+                "vulns": [
+                    {
+                        "name": "CVE-2022-48174",
+                        "severity": {
+                            "value": "Critical",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 9.8,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2022-12-28",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r1",
+                        "publishDateByVendor": {
+                            "nvd": "2023-08-22",
+                            "vulndb": "2022-12-28"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-42363",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r7",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-42364",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r7",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-42365",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r7",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-42366",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r6",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "os",
+                "name": "busybox-binsh",
+                "version": "1.36.0-r9",
+                "path": "/lib/apk/db/installed",
+                "suggestedFix": "1.36.1-r1",
+                "inUse": false,
+                "vulns": [
+                    {
+                        "name": "CVE-2023-42366",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r6",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-42364",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r7",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-42363",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r7",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    },
+                    {
+                        "name": "CVE-2022-48174",
+                        "severity": {
+                            "value": "Critical",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 9.8,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2022-12-28",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r1",
+                        "publishDateByVendor": {
+                            "nvd": "2023-08-22",
+                            "vulndb": "2022-12-28"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-42365",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r7",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "os",
+                "name": "ssl_client",
+                "version": "1.36.0-r9",
+                "path": "/lib/apk/db/installed",
+                "suggestedFix": "1.36.1-r1",
+                "inUse": false,
+                "vulns": [
+                    {
+                        "name": "CVE-2023-42365",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r7",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-42366",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r6",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-42364",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r7",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    },
+                    {
+                        "name": "CVE-2022-48174",
+                        "severity": {
+                            "value": "Critical",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 9.8,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2022-12-28",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r1",
+                        "publishDateByVendor": {
+                            "nvd": "2023-08-22",
+                            "vulndb": "2022-12-28"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-42363",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-11-23",
+                        "exploitable": false,
+                        "fixedInVersion": "1.36.1-r7",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-27",
+                            "vulndb": "2023-11-23"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "os",
+                "name": "libcrypto3",
+                "version": "3.1.0-r4",
+                "path": "/lib/apk/db/installed",
+                "suggestedFix": "3.1.6-r0",
+                "inUse": false,
+                "vulns": [
+                    {
+                        "name": "CVE-2023-6129",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 6.5,
+                                "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2024-01-09",
+                        "solutionDate": "2024-01-30",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r3",
+                        "publishDateByVendor": {
+                            "nvd": "2024-01-09",
+                            "vulndb": "2024-01-09"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-5678",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.3,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-10-26",
+                        "solutionDate": "2024-01-30",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r1",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-06",
+                            "vulndb": "2023-10-26"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-5363",
+                        "severity": {
+                            "value": "High",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 7.5,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-10-24",
+                        "solutionDate": "2023-10-24",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r0",
+                        "acceptedRisks": [
+                            {
+                                "index": 0,
+                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                "id": "17e39f122360b308e17b897ccb031ba4"
+                            }
+                        ],
+                        "publishDateByVendor": {
+                            "nvd": "2023-10-25",
+                            "vulndb": "2023-10-24"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-3817",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.3,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-07-25",
+                        "solutionDate": "2023-08-01",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.2-r0",
+                        "publishDateByVendor": {
+                            "nvd": "2023-07-31",
+                            "vulndb": "2023-07-25"
+                        }
+                    },
+                    {
+                        "name": "CVE-2024-2511",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 5.9,
+                                "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-04-05",
+                        "solutionDate": "2024-06-04",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r6",
+                        "publishDateByVendor": {
+                            "nvd": "2024-04-08",
+                            "vulndb": "2024-04-05"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-3446",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.3,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-07-13",
+                        "solutionDate": "2023-08-01",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.1-r3",
+                        "publishDateByVendor": {
+                            "nvd": "2023-07-19",
+                            "vulndb": "2023-07-13"
+                        }
+                    },
+                    {
+                        "name": "CVE-2024-5535",
+                        "severity": {
+                            "value": "High",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 8.2,
+                                "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-06-27",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.6-r0",
+                        "publishDateByVendor": {
+                            "nvd": "2024-06-27",
+                            "vulndb": "2024-06-27"
+                        }
+                    },
+                    {
+                        "name": "CVE-2024-0727",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2024-01-22",
+                        "solutionDate": "2024-01-30",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r5",
+                        "publishDateByVendor": {
+                            "nvd": "2024-01-26",
+                            "vulndb": "2024-01-22"
+                        }
+                    },
+                    {
+                        "name": "CVE-2024-4603",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 5.3,
+                                "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-05-16",
+                        "solutionDate": "2024-06-04",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.5-r0",
+                        "publishDateByVendor": {
+                            "nvd": "2024-05-16",
+                            "vulndb": "2024-05-16"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-6237",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 5.3,
+                                "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-01-09",
+                        "solutionDate": "2024-01-30",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r4",
+                        "publishDateByVendor": {
+                            "nvd": "2024-04-25",
+                            "vulndb": "2024-01-09"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-2975",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.3,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-07-07",
+                        "solutionDate": "2023-08-01",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.1-r2",
+                        "publishDateByVendor": {
+                            "nvd": "2023-07-14",
+                            "vulndb": "2023-07-07"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-2650",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 6.5,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-05-29",
+                        "solutionDate": "2023-05-29",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.1-r0",
+                        "publishDateByVendor": {
+                            "nvd": "2023-05-30",
+                            "vulndb": "2023-05-29"
+                        }
+                    },
+                    {
+                        "name": "CVE-2024-4741",
+                        "severity": {
+                            "value": "High",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 8.1,
+                                "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-05-28",
+                        "solutionDate": "2024-06-04",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.6-r0",
+                        "publishDateByVendor": {
+                            "vulndb": "2024-05-28"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "os",
+                "name": "libssl3",
+                "version": "3.1.0-r4",
+                "path": "/lib/apk/db/installed",
+                "suggestedFix": "3.1.6-r0",
+                "inUse": false,
+                "vulns": [
+                    {
+                        "name": "CVE-2023-6237",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 5.3,
+                                "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-01-09",
+                        "solutionDate": "2024-01-30",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r4",
+                        "publishDateByVendor": {
+                            "nvd": "2024-04-25",
+                            "vulndb": "2024-01-09"
+                        }
+                    },
+                    {
+                        "name": "CVE-2024-5535",
+                        "severity": {
+                            "value": "High",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 8.2,
+                                "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-06-27",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.6-r0",
+                        "publishDateByVendor": {
+                            "nvd": "2024-06-27",
+                            "vulndb": "2024-06-27"
+                        }
+                    },
+                    {
+                        "name": "CVE-2024-0727",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.5,
+                                "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2024-01-22",
+                        "solutionDate": "2024-01-30",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r5",
+                        "publishDateByVendor": {
+                            "nvd": "2024-01-26",
+                            "vulndb": "2024-01-22"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-5678",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.3,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-10-26",
+                        "solutionDate": "2024-01-30",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r1",
+                        "publishDateByVendor": {
+                            "nvd": "2023-11-06",
+                            "vulndb": "2023-10-26"
+                        }
+                    },
+                    {
+                        "name": "CVE-2024-4603",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 5.3,
+                                "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-05-16",
+                        "solutionDate": "2024-06-04",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.5-r0",
+                        "publishDateByVendor": {
+                            "nvd": "2024-05-16",
+                            "vulndb": "2024-05-16"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-3817",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.3,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-07-25",
+                        "solutionDate": "2023-08-01",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.2-r0",
+                        "publishDateByVendor": {
+                            "nvd": "2023-07-31",
+                            "vulndb": "2023-07-25"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-2975",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.3,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-07-07",
+                        "solutionDate": "2023-08-01",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.1-r2",
+                        "publishDateByVendor": {
+                            "nvd": "2023-07-14",
+                            "vulndb": "2023-07-07"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-6129",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 6.5,
+                                "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2024-01-09",
+                        "solutionDate": "2024-01-30",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r3",
+                        "publishDateByVendor": {
+                            "nvd": "2024-01-09",
+                            "vulndb": "2024-01-09"
+                        }
+                    },
+                    {
+                        "name": "CVE-2024-4741",
+                        "severity": {
+                            "value": "High",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 8.1,
+                                "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-05-28",
+                        "solutionDate": "2024-06-04",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.6-r0",
+                        "publishDateByVendor": {
+                            "vulndb": "2024-05-28"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-5363",
+                        "severity": {
+                            "value": "High",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 7.5,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-10-24",
+                        "solutionDate": "2023-10-24",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r0",
+                        "acceptedRisks": [
+                            {
+                                "index": 0,
+                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                "id": "17e39f122360b308e17b897ccb031ba4"
+                            }
+                        ],
+                        "publishDateByVendor": {
+                            "nvd": "2023-10-25",
+                            "vulndb": "2023-10-24"
+                        }
+                    },
+                    {
+                        "name": "CVE-2024-2511",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 5.9,
+                                "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-04-05",
+                        "solutionDate": "2024-06-04",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.4-r6",
+                        "publishDateByVendor": {
+                            "nvd": "2024-04-08",
+                            "vulndb": "2024-04-05"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-2650",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 6.5,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-05-29",
+                        "solutionDate": "2023-05-29",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.1-r0",
+                        "publishDateByVendor": {
+                            "nvd": "2023-05-30",
+                            "vulndb": "2023-05-29"
+                        }
+                    },
+                    {
+                        "name": "CVE-2023-3446",
+                        "severity": {
+                            "value": "Medium",
+                            "sourceName": "nvd"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.1",
+                                "score": 5.3,
+                                "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                            },
+                            "sourceName": "nvd"
+                        },
+                        "disclosureDate": "2023-07-13",
+                        "solutionDate": "2023-08-01",
+                        "exploitable": false,
+                        "fixedInVersion": "3.1.1-r3",
+                        "publishDateByVendor": {
+                            "nvd": "2023-07-19",
+                            "vulndb": "2023-07-13"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "os",
+                "name": "alpine-baselayout",
+                "version": "3.4.3-r1",
+                "path": "/lib/apk/db/installed",
+                "inUse": false
+            },
+            {
+                "type": "os",
+                "name": "alpine-baselayout-data",
+                "version": "3.4.3-r1",
+                "path": "/lib/apk/db/installed",
+                "inUse": false
+            },
+            {
+                "type": "os",
+                "name": "alpine-keys",
+                "version": "2.4-r1",
+                "path": "/lib/apk/db/installed",
+                "inUse": false
+            },
+            {
+                "type": "os",
+                "name": "apk-tools",
+                "version": "2.14.0-r0",
+                "path": "/lib/apk/db/installed",
+                "inUse": false
+            },
+            {
+                "type": "os",
+                "name": "ca-certificates-bundle",
+                "version": "20230506-r0",
+                "path": "/lib/apk/db/installed",
+                "inUse": false
+            },
+            {
+                "type": "os",
+                "name": "libc-utils",
+                "version": "0.7.2-r5",
+                "path": "/lib/apk/db/installed",
+                "inUse": false
+            },
+            {
+                "type": "os",
+                "name": "musl",
+                "version": "1.2.4-r0",
+                "path": "/lib/apk/db/installed",
+                "inUse": true
+            },
+            {
+                "type": "os",
+                "name": "musl-utils",
+                "version": "1.2.4-r0",
+                "path": "/lib/apk/db/installed",
+                "inUse": false
+            },
+            {
+                "type": "os",
+                "name": "scanelf",
+                "version": "1.3.7-r1",
+                "path": "/lib/apk/db/installed",
+                "inUse": false
+            },
+            {
+                "type": "os",
+                "name": "zlib",
+                "version": "1.2.13-r1",
+                "path": "/lib/apk/db/installed",
+                "inUse": false
+            }
+        ],
+        "policyEvaluations": [
+            {
+                "name": "Match All Scopes",
+                "identifier": "match-all-scopes",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "Demo",
+                        "identifier": "demo",
+                        "type": "custom",
+                        "rules": [
+                            {
+                                "ruleType": "imageConfigDefaultUser",
+                                "failureType": "imageConfigFailure",
+                                "description": "User is root",
+                                "failures": [
+                                    {
+                                        "remediation": "Modify your image configuration and set the default user to other than root\nCheck the documentation to learn why and how to change the default image user\n",
+                                        "Arguments": null
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "imageConfigDefaultUserIsRoot"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal critical AND Fixable since 30 days AND Disclosure date older than or equal 60 days AND Public Exploit available since 30 days AND No administrative privileges required AND Network attack vector",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnAge",
+                                        "extra": {
+                                            "age": 60
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitableNoAdmin"
+                                    },
+                                    {
+                                        "type": "vulnExploitableViaNetwork"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnDenyList",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Vulnerabilities Deny List: CVE-2022-22963, CVE-2021-44832, CVE-2017-8046",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "denyCVE",
+                                        "extra": {
+                                            "vulnIds": [
+                                                "CVE-2022-22963",
+                                                "CVE-2021-44832",
+                                                "CVE-2017-8046"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "imageConfigSensitiveInformationAndSecrets",
+                                "failureType": "imageConfigFailure",
+                                "description": "Forbid sensitive information and secrets in the image metadata",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "imageConfigSensitiveInformationAndSecrets"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "imageConfigEnvVariable",
+                                "failureType": "imageConfigFailure",
+                                "description": "Variable True does not exist",
+                                "failures": [
+                                    {
+                                        "remediation": "Environment variable True does not exists\nAdd environment variable True to image config\n",
+                                        "Arguments": null
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "imageConfigEnvVariableNotExists",
+                                        "extra": {
+                                            "key": "True"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2022-03-31T20:35:43.432508Z",
+                        "updatedAt": "2023-11-02T16:01:59.965681Z"
+                    },
+                    {
+                        "name": "Severe vulnerabilities with a Fix",
+                        "identifier": "severe_vulnerabilities_with_a_fix",
+                        "type": "predefined",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal high AND Network attack vector AND Fixable",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 1,
+                                        "ref": "$.result.packages[4].vuln[1]",
+                                        "description": "CVE-2024-5535 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 9,
+                                        "ref": "$.result.packages[4].vuln[9]",
+                                        "description": "CVE-2023-5363 found in pkg 'libssl3:3.1.0-r4'",
+                                        "acceptedRisks": [
+                                            {
+                                                "index": 0,
+                                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                                "id": "17e39f122360b308e17b897ccb031ba4"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[0].vuln[0]",
+                                        "description": "CVE-2022-48174 found in pkg 'busybox:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[1].vuln[3]",
+                                        "description": "CVE-2022-48174 found in pkg 'busybox-binsh:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 12,
+                                        "ref": "$.result.packages[3].vuln[12]",
+                                        "description": "CVE-2024-4741 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 2,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[2].vuln[3]",
+                                        "description": "CVE-2022-48174 found in pkg 'ssl_client:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 2,
+                                        "ref": "$.result.packages[3].vuln[2]",
+                                        "description": "CVE-2023-5363 found in pkg 'libcrypto3:3.1.0-r4'",
+                                        "acceptedRisks": [
+                                            {
+                                                "index": 0,
+                                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                                "id": "17e39f122360b308e17b897ccb031ba4"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 8,
+                                        "ref": "$.result.packages[4].vuln[8]",
+                                        "description": "CVE-2024-4741 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 6,
+                                        "ref": "$.result.packages[3].vuln[6]",
+                                        "description": "CVE-2024-5535 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitableViaNetwork"
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal high AND Fixable since 30 days",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 8,
+                                        "ref": "$.result.packages[4].vuln[8]",
+                                        "description": "CVE-2024-4741 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 2,
+                                        "ref": "$.result.packages[3].vuln[2]",
+                                        "description": "CVE-2023-5363 found in pkg 'libcrypto3:3.1.0-r4'",
+                                        "acceptedRisks": [
+                                            {
+                                                "index": 0,
+                                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                                "id": "17e39f122360b308e17b897ccb031ba4"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 12,
+                                        "ref": "$.result.packages[3].vuln[12]",
+                                        "description": "CVE-2024-4741 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 9,
+                                        "ref": "$.result.packages[4].vuln[9]",
+                                        "description": "CVE-2023-5363 found in pkg 'libssl3:3.1.0-r4'",
+                                        "acceptedRisks": [
+                                            {
+                                                "index": 0,
+                                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                                "id": "17e39f122360b308e17b897ccb031ba4"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal critical AND Fixable",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 2,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[2].vuln[3]",
+                                        "description": "CVE-2022-48174 found in pkg 'ssl_client:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[1].vuln[3]",
+                                        "description": "CVE-2022-48174 found in pkg 'busybox-binsh:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[0].vuln[0]",
+                                        "description": "CVE-2022-48174 found in pkg 'busybox:1.36.0-r9'"
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2022-01-17T10:54:14.571304Z",
+                        "updatedAt": "2022-01-17T10:54:14.571304Z"
+                    }
+                ],
+                "acceptedRiskTotal": 4,
+                "evaluationResult": "failed",
+                "createdAt": "2022-04-27T14:27:07.255907Z",
+                "updatedAt": "2024-08-06T10:39:14.167238Z"
+            },
+            {
+                "name": "test",
+                "identifier": "test",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "test",
+                        "identifier": "test",
+                        "type": "custom",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal critical AND Public Exploit available AND No User interaction required",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitable"
+                                    },
+                                    {
+                                        "type": "vulnExploitableNoUser"
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2024-04-08T14:04:05.739402Z",
+                        "updatedAt": "2024-04-08T14:04:05.739402Z"
+                    }
+                ],
+                "acceptedRiskTotal": 0,
+                "evaluationResult": "passed",
+                "createdAt": "2024-04-08T14:05:10.696933Z",
+                "updatedAt": "2024-04-08T14:05:10.696933Z"
+            },
+            {
+                "name": "SLA Test",
+                "identifier": "sla-test",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "SLA Test",
+                        "identifier": "sla-test",
+                        "type": "custom",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal critical AND Fixable since 30 days AND Public Exploit available",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitable"
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2023-08-18T19:46:18.545369Z",
+                        "updatedAt": "2023-08-18T19:46:18.545369Z"
+                    }
+                ],
+                "acceptedRiskTotal": 0,
+                "evaluationResult": "passed",
+                "createdAt": "2023-08-18T19:47:05.898606Z",
+                "updatedAt": "2023-08-18T19:47:05.898606Z"
+            },
+            {
+                "name": "landsure",
+                "identifier": "landsure",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "test-landsure-bundle",
+                        "identifier": "test-landsure-bundle",
+                        "type": "custom",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Package type is os",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 6,
+                                        "ref": "$.result.packages[3].vuln[6]",
+                                        "description": "CVE-2024-5535 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 4,
+                                        "ref": "$.result.packages[3].vuln[4]",
+                                        "description": "CVE-2024-2511 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 10,
+                                        "ref": "$.result.packages[4].vuln[10]",
+                                        "description": "CVE-2024-2511 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 1,
+                                        "ref": "$.result.packages[0].vuln[1]",
+                                        "description": "CVE-2023-42363 found in pkg 'busybox:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 5,
+                                        "ref": "$.result.packages[3].vuln[5]",
+                                        "description": "CVE-2023-3446 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 6,
+                                        "ref": "$.result.packages[4].vuln[6]",
+                                        "description": "CVE-2023-2975 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 2,
+                                        "ref": "$.result.packages[4].vuln[2]",
+                                        "description": "CVE-2024-0727 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[4].vuln[0]",
+                                        "description": "CVE-2023-6237 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[1].vuln[0]",
+                                        "description": "CVE-2023-42366 found in pkg 'busybox-binsh:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 2,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[2].vuln[3]",
+                                        "description": "CVE-2022-48174 found in pkg 'ssl_client:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 2,
+                                        "vulnInPkgIndex": 2,
+                                        "ref": "$.result.packages[2].vuln[2]",
+                                        "description": "CVE-2023-42364 found in pkg 'ssl_client:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 12,
+                                        "ref": "$.result.packages[4].vuln[12]",
+                                        "description": "CVE-2023-3446 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 1,
+                                        "ref": "$.result.packages[4].vuln[1]",
+                                        "description": "CVE-2024-5535 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 10,
+                                        "ref": "$.result.packages[3].vuln[10]",
+                                        "description": "CVE-2023-2975 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 2,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[2].vuln[0]",
+                                        "description": "CVE-2023-42365 found in pkg 'ssl_client:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 4,
+                                        "ref": "$.result.packages[1].vuln[4]",
+                                        "description": "CVE-2023-42365 found in pkg 'busybox-binsh:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[4].vuln[3]",
+                                        "description": "CVE-2023-5678 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 1,
+                                        "ref": "$.result.packages[3].vuln[1]",
+                                        "description": "CVE-2023-5678 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[0].vuln[3]",
+                                        "description": "CVE-2023-42365 found in pkg 'busybox:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 2,
+                                        "ref": "$.result.packages[1].vuln[2]",
+                                        "description": "CVE-2023-42363 found in pkg 'busybox-binsh:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[1].vuln[3]",
+                                        "description": "CVE-2022-48174 found in pkg 'busybox-binsh:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 1,
+                                        "ref": "$.result.packages[1].vuln[1]",
+                                        "description": "CVE-2023-42364 found in pkg 'busybox-binsh:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 8,
+                                        "ref": "$.result.packages[3].vuln[8]",
+                                        "description": "CVE-2024-4603 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 4,
+                                        "ref": "$.result.packages[0].vuln[4]",
+                                        "description": "CVE-2023-42366 found in pkg 'busybox:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 7,
+                                        "ref": "$.result.packages[3].vuln[7]",
+                                        "description": "CVE-2024-0727 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 9,
+                                        "ref": "$.result.packages[3].vuln[9]",
+                                        "description": "CVE-2023-6237 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[3].vuln[3]",
+                                        "description": "CVE-2023-3817 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 5,
+                                        "ref": "$.result.packages[4].vuln[5]",
+                                        "description": "CVE-2023-3817 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 9,
+                                        "ref": "$.result.packages[4].vuln[9]",
+                                        "description": "CVE-2023-5363 found in pkg 'libssl3:3.1.0-r4'",
+                                        "acceptedRisks": [
+                                            {
+                                                "index": 0,
+                                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                                "id": "17e39f122360b308e17b897ccb031ba4"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 8,
+                                        "ref": "$.result.packages[4].vuln[8]",
+                                        "description": "CVE-2024-4741 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 7,
+                                        "ref": "$.result.packages[4].vuln[7]",
+                                        "description": "CVE-2023-6129 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 12,
+                                        "ref": "$.result.packages[3].vuln[12]",
+                                        "description": "CVE-2024-4741 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 11,
+                                        "ref": "$.result.packages[4].vuln[11]",
+                                        "description": "CVE-2023-2650 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[3].vuln[0]",
+                                        "description": "CVE-2023-6129 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 4,
+                                        "ref": "$.result.packages[4].vuln[4]",
+                                        "description": "CVE-2024-4603 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 11,
+                                        "ref": "$.result.packages[3].vuln[11]",
+                                        "description": "CVE-2023-2650 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 2,
+                                        "vulnInPkgIndex": 1,
+                                        "ref": "$.result.packages[2].vuln[1]",
+                                        "description": "CVE-2023-42366 found in pkg 'ssl_client:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[0].vuln[0]",
+                                        "description": "CVE-2022-48174 found in pkg 'busybox:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 2,
+                                        "vulnInPkgIndex": 4,
+                                        "ref": "$.result.packages[2].vuln[4]",
+                                        "description": "CVE-2023-42363 found in pkg 'ssl_client:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 2,
+                                        "ref": "$.result.packages[0].vuln[2]",
+                                        "description": "CVE-2023-42364 found in pkg 'busybox:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 2,
+                                        "ref": "$.result.packages[3].vuln[2]",
+                                        "description": "CVE-2023-5363 found in pkg 'libcrypto3:3.1.0-r4'",
+                                        "acceptedRisks": [
+                                            {
+                                                "index": 0,
+                                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                                "id": "17e39f122360b308e17b897ccb031ba4"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnPkgType",
+                                        "extra": {
+                                            "pkgType": "os"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2024-06-13T20:41:39.934179Z",
+                        "updatedAt": "2024-06-13T20:41:39.934179Z"
+                    }
+                ],
+                "acceptedRiskTotal": 2,
+                "evaluationResult": "failed",
+                "createdAt": "2024-06-13T20:43:23.543985Z",
+                "updatedAt": "2024-06-13T20:49:17.817355Z"
+            },
+            {
+                "name": "Out of the Box Policy",
+                "identifier": "out-of-the-box-policy",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "Severe vulnerabilities with a Fix",
+                        "identifier": "severe_vulnerabilities_with_a_fix",
+                        "type": "predefined",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal high AND Network attack vector AND Fixable",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 2,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[2].vuln[3]",
+                                        "description": "CVE-2022-48174 found in pkg 'ssl_client:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[1].vuln[3]",
+                                        "description": "CVE-2022-48174 found in pkg 'busybox-binsh:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 8,
+                                        "ref": "$.result.packages[4].vuln[8]",
+                                        "description": "CVE-2024-4741 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 9,
+                                        "ref": "$.result.packages[4].vuln[9]",
+                                        "description": "CVE-2023-5363 found in pkg 'libssl3:3.1.0-r4'",
+                                        "acceptedRisks": [
+                                            {
+                                                "index": 0,
+                                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                                "id": "17e39f122360b308e17b897ccb031ba4"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 12,
+                                        "ref": "$.result.packages[3].vuln[12]",
+                                        "description": "CVE-2024-4741 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 6,
+                                        "ref": "$.result.packages[3].vuln[6]",
+                                        "description": "CVE-2024-5535 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[0].vuln[0]",
+                                        "description": "CVE-2022-48174 found in pkg 'busybox:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 1,
+                                        "ref": "$.result.packages[4].vuln[1]",
+                                        "description": "CVE-2024-5535 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 2,
+                                        "ref": "$.result.packages[3].vuln[2]",
+                                        "description": "CVE-2023-5363 found in pkg 'libcrypto3:3.1.0-r4'",
+                                        "acceptedRisks": [
+                                            {
+                                                "index": 0,
+                                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                                "id": "17e39f122360b308e17b897ccb031ba4"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitableViaNetwork"
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal high AND Fixable since 30 days",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 12,
+                                        "ref": "$.result.packages[3].vuln[12]",
+                                        "description": "CVE-2024-4741 found in pkg 'libcrypto3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 3,
+                                        "vulnInPkgIndex": 2,
+                                        "ref": "$.result.packages[3].vuln[2]",
+                                        "description": "CVE-2023-5363 found in pkg 'libcrypto3:3.1.0-r4'",
+                                        "acceptedRisks": [
+                                            {
+                                                "index": 0,
+                                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                                "id": "17e39f122360b308e17b897ccb031ba4"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 8,
+                                        "ref": "$.result.packages[4].vuln[8]",
+                                        "description": "CVE-2024-4741 found in pkg 'libssl3:3.1.0-r4'"
+                                    },
+                                    {
+                                        "pkgIndex": 4,
+                                        "vulnInPkgIndex": 9,
+                                        "ref": "$.result.packages[4].vuln[9]",
+                                        "description": "CVE-2023-5363 found in pkg 'libssl3:3.1.0-r4'",
+                                        "acceptedRisks": [
+                                            {
+                                                "index": 0,
+                                                "ref": "$.result.riskAcceptanceDefinitions[0]",
+                                                "id": "17e39f122360b308e17b897ccb031ba4"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal critical AND Fixable",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 2,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[2].vuln[3]",
+                                        "description": "CVE-2022-48174 found in pkg 'ssl_client:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 3,
+                                        "ref": "$.result.packages[1].vuln[3]",
+                                        "description": "CVE-2022-48174 found in pkg 'busybox-binsh:1.36.0-r9'"
+                                    },
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[0].vuln[0]",
+                                        "description": "CVE-2022-48174 found in pkg 'busybox:1.36.0-r9'"
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2022-01-17T10:54:14.571304Z",
+                        "updatedAt": "2022-01-17T10:54:14.571304Z"
+                    }
+                ],
+                "acceptedRiskTotal": 4,
+                "evaluationResult": "failed",
+                "createdAt": "2022-04-06T17:22:00.784329Z",
+                "updatedAt": "2024-07-10T03:03:13.53003Z"
+            }
+        ],
+        "policyEvaluationsResult": "failed",
+        "riskAcceptanceDefinitions": [
+            {
+                "id": "17e39f122360b308e17b897ccb031ba4",
+                "entityType": "vulnerability",
+                "entityValue": "CVE-2023-5363",
+                "context": [],
+                "status": "active",
+                "reason": "RiskOwned",
+                "description": "test",
+                "expirationDate": "2024-08-18",
+                "createdAt": "2024-07-19T13:06:22.837429Z",
+                "updatedAt": "2024-07-19T13:06:22.837429Z"
+            }
+        ]
+    }
+}

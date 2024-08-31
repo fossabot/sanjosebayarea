@@ -1,0 +1,1205 @@
+{
+    "result": {
+        "type": "dockerImage",
+        "metadata": {
+            "pullString": "docker.io/redis:alpine",
+            "imageId": "sha256:38a44d79682281c78810ce4f57a9a6c65e2307a1c6c4c7719092814b1ab5170f",
+            "digest": "sha256:de14eedfbd1fc871d0f5aa1773fd80743930e45354d035b6f3b551e7ffa44df8",
+            "baseOs": "alpine 3.20.1",
+            "size": 41515008,
+            "os": "linux",
+            "architecture": "amd64",
+            "layersCount": 17,
+            "createdAt": "2024-05-22T23:17:59Z"
+        },
+        "vulnTotalBySeverity": {
+            "critical": 0,
+            "high": 2,
+            "low": 0,
+            "medium": 0,
+            "negligible": 0
+        },
+        "fixableVulnTotalBySeverity": {
+            "critical": 0,
+            "high": 2,
+            "low": 0,
+            "medium": 0,
+            "negligible": 0
+        },
+        "runningVulnTotalBySeverity": {
+            "critical": 0,
+            "high": 2,
+            "low": 0,
+            "medium": 0,
+            "negligible": 0
+        },
+        "exploitsCount": 0,
+        "riskSpotlightEnabled": true,
+        "layers": [
+            {
+                "digest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f",
+                "size": 8082944,
+                "command": "/bin/sh -c #(nop) ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / ",
+                "vulns": {
+                    "critical": 0,
+                    "high": 2,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 2,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": [
+                    {
+                        "pullstrings": [
+                            "index.docker.io/library/alpine:latest"
+                        ]
+                    }
+                ]
+            },
+            {
+                "digest": "",
+                "command": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "sha256:d9b5f7b65b8c764c19ee394fc282a879f50f42c112d74d59e2542b9ffb8a251b",
+                "size": 10752,
+                "command": "RUN /bin/sh -c set -eux; \taddgroup -S -g 1000 redis; \tadduser -S -G redis -u 999 redis # buildkit",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "sha256:ce95a379dd79e42486d189287bbdfed58443b3be87e0dc3177877a5e352c5110",
+                "size": 940544,
+                "command": "RUN /bin/sh -c set -eux; \tapk add --no-cache \t\ttzdata \t; # buildkit",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "",
+                "command": "ENV GOSU_VERSION=1.17",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "sha256:6b4d2b06e6ee3579854147465f420b5e1ff357bbe5dc07ffc5546cb9051be8bf",
+                "size": 2417152,
+                "command": "RUN /bin/sh -c set -eux; \tapk add --no-cache --virtual .gosu-fetch gnupg; \tarch=\"$(apk --print-arch)\"; \tcase \"$arch\" in \t\t'x86_64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; \t\t'aarch64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; \t\t'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; \t\t'x86') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; \t\t'ppc64le') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; \t\t'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; \t\t's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; \t\t'armv7') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; \t\t*) echo >&2 \"error: unsupported gosu architecture: '$arch'\"; exit 1 ;; \tesac; \twget -O /usr/local/bin/gosu.asc \"$url.asc\"; \twget -O /usr/local/bin/gosu \"$url\"; \techo \"$sha256 */usr/local/bin/gosu\" | sha256sum -c -; \texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\" /usr/local/bin/gosu.asc; \tapk del --no-network .gosu-fetch; \tchmod +x /usr/local/bin/gosu; \tgosu --version; \tgosu nobody true # buildkit",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "",
+                "command": "ENV REDIS_VERSION=7.2.5",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "",
+                "command": "ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.5.tar.gz",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "",
+                "command": "ENV REDIS_DOWNLOAD_SHA=5981179706f8391f03be91d951acafaeda91af7fac56beffb2701963103e423d",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "sha256:ad2d33775debe23c1d3797f732d82bdad80775b7e48f6525a850335aa84db03c",
+                "size": 30056960,
+                "command": "RUN /bin/sh -c set -eux; \t\tapk add --no-cache --virtual .build-deps \t\tcoreutils \t\tdpkg-dev dpkg \t\tgcc \t\tlinux-headers \t\tmake \t\tmusl-dev \t\topenssl-dev \t\twget \t; \t\twget -O redis.tar.gz \"$REDIS_DOWNLOAD_URL\"; \techo \"$REDIS_DOWNLOAD_SHA *redis.tar.gz\" | sha256sum -c -; \tmkdir -p /usr/src/redis; \ttar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; \trm redis.tar.gz; \t\tgrep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; \tsed -ri 's!^( *createBoolConfig[(]\"protected-mode\",.*, *)1( *,.*[)],)$!\\10\\2!' /usr/src/redis/src/config.c; \tgrep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; \t\tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \textraJemallocConfigureFlags=\"--build=$gnuArch\"; \tdpkgArch=\"$(dpkg --print-architecture)\"; \tcase \"${dpkgArch##*-}\" in \t\tamd64 | i386 | x32) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=12\" ;; \t\t*) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=16\" ;; \tesac; \textraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-hugepage=21\"; \tgrep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; \tsed -ri 's!cd jemalloc && ./configure !&'\"$extraJemallocConfigureFlags\"' !' /usr/src/redis/deps/Makefile; \tgrep -F \"cd jemalloc && ./configure $extraJemallocConfigureFlags \" /usr/src/redis/deps/Makefile; \t\texport BUILD_TLS=yes; \tmake -C /usr/src/redis -j \"$(nproc)\" all; \tmake -C /usr/src/redis install; \t\tserverMd5=\"$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)\"; export serverMd5; \tfind /usr/local/bin/redis* -maxdepth 0 \t\t-type f -not -name redis-server \t\t-exec sh -eux -c ' \t\t\tmd5=\"$(md5sum \"$1\" | cut -d\" \" -f1)\"; \t\t\ttest \"$md5\" = \"$serverMd5\"; \t\t' -- '{}' ';' \t\t-exec ln -svfT 'redis-server' '{}' ';' \t; \t\trm -r /usr/src/redis; \t\trunDeps=\"$( \t\tscanelf --needed --nobanner --format '%n#p' --recursive /usr/local \t\t\t| tr ',' '\\n' \t\t\t| sort -u \t\t\t| awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' \t)\"; \tapk add --no-network --virtual .redis-rundeps $runDeps; \tapk del --no-network .build-deps; \t\tredis-cli --version; \tredis-server --version # buildkit",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "sha256:30ad4cdb67dd581f8215e49d2153145359d26bf6a9760ddcf545144ecefb9a1b",
+                "size": 1536,
+                "command": "RUN /bin/sh -c mkdir /data && chown redis:redis /data # buildkit",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "",
+                "command": "VOLUME [/data]",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "size": 1024,
+                "command": "WORKDIR /data",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "sha256:62f7eb1caf2063a3952508b25176be1e01f5a7be101d1896ecc65522ef428ecd",
+                "size": 4096,
+                "command": "COPY docker-entrypoint.sh /usr/local/bin/ # buildkit",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "",
+                "command": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "",
+                "command": "EXPOSE map[6379/tcp:{}]",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            },
+            {
+                "digest": "",
+                "command": "CMD [\"redis-server\"]",
+                "vulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "runningVulns": {
+                    "critical": 0,
+                    "high": 0,
+                    "low": 0,
+                    "medium": 0,
+                    "negligible": 0
+                },
+                "baseImages": []
+            }
+        ],
+        "packages": [
+            {
+                "type": "os",
+                "name": "libcrypto3",
+                "version": "3.3.1-r0",
+                "path": "/lib/apk/db/installed",
+                "suggestedFix": "3.3.1-r1",
+                "inUse": true,
+                "vulns": [
+                    {
+                        "name": "CVE-2024-5535",
+                        "severity": {
+                            "value": "High",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 8.2,
+                                "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-06-27",
+                        "exploitable": false,
+                        "fixedInVersion": "3.3.1-r1",
+                        "publishDateByVendor": {
+                            "nvd": "2024-06-27",
+                            "vulndb": "2024-06-27"
+                        }
+                    }
+                ],
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": "libssl3",
+                "version": "3.3.1-r0",
+                "path": "/lib/apk/db/installed",
+                "suggestedFix": "3.3.1-r1",
+                "inUse": true,
+                "vulns": [
+                    {
+                        "name": "CVE-2024-5535",
+                        "severity": {
+                            "value": "High",
+                            "sourceName": "vulndb"
+                        },
+                        "cvssScore": {
+                            "value": {
+                                "version": "3.0",
+                                "score": 8.2,
+                                "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+                            },
+                            "sourceName": "vulndb"
+                        },
+                        "disclosureDate": "2024-06-27",
+                        "exploitable": false,
+                        "fixedInVersion": "3.3.1-r1",
+                        "publishDateByVendor": {
+                            "nvd": "2024-06-27",
+                            "vulndb": "2024-06-27"
+                        }
+                    }
+                ],
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": "alpine-baselayout",
+                "version": "3.6.5-r0",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": "alpine-baselayout-data",
+                "version": "3.6.5-r0",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": "alpine-keys",
+                "version": "2.4-r1",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": "apk-tools",
+                "version": "2.14.4-r0",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": "busybox",
+                "version": "1.36.1-r29",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": "busybox-binsh",
+                "version": "1.36.1-r29",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": "ca-certificates-bundle",
+                "version": "20240226-r0",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "golang",
+                "name": "github.com/moby/sys/user",
+                "version": "v0.1.0",
+                "path": "/usr/local/bin/gosu",
+                "inUse": false,
+                "layerDigest": "sha256:6b4d2b06e6ee3579854147465f420b5e1ff357bbe5dc07ffc5546cb9051be8bf"
+            },
+            {
+                "type": "golang",
+                "name": "golang.org/x/sys",
+                "version": "v0.13.0",
+                "path": "/usr/local/bin/gosu",
+                "inUse": false,
+                "layerDigest": "sha256:6b4d2b06e6ee3579854147465f420b5e1ff357bbe5dc07ffc5546cb9051be8bf"
+            },
+            {
+                "type": "os",
+                "name": "musl",
+                "version": "1.2.5-r0",
+                "path": "/lib/apk/db/installed",
+                "inUse": true,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": "musl-utils",
+                "version": "1.2.5-r0",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": ".redis-rundeps",
+                "version": "20240620.205720",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:ad2d33775debe23c1d3797f732d82bdad80775b7e48f6525a850335aa84db03c"
+            },
+            {
+                "type": "os",
+                "name": "scanelf",
+                "version": "1.3.7-r2",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": "ssl_client",
+                "version": "1.36.1-r29",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            },
+            {
+                "type": "os",
+                "name": "tzdata",
+                "version": "2024a-r1",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:ce95a379dd79e42486d189287bbdfed58443b3be87e0dc3177877a5e352c5110"
+            },
+            {
+                "type": "os",
+                "name": "zlib",
+                "version": "1.3.1-r1",
+                "path": "/lib/apk/db/installed",
+                "inUse": false,
+                "layerDigest": "sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f"
+            }
+        ],
+        "policyEvaluations": [
+            {
+                "name": "Match All Scopes",
+                "identifier": "match-all-scopes",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "Demo",
+                        "identifier": "demo",
+                        "type": "custom",
+                        "rules": [
+                            {
+                                "ruleType": "imageConfigEnvVariable",
+                                "failureType": "imageConfigFailure",
+                                "description": "Variable True does not exist",
+                                "ruleId": "17451",
+                                "failures": [
+                                    {
+                                        "remediation": "Environment variable True does not exists\nAdd environment variable True to image config\n",
+                                        "Arguments": null
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "imageConfigEnvVariableNotExists",
+                                        "extra": {
+                                            "key": "True"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal critical AND Fixable since 30 days AND Disclosure date older than or equal 60 days AND Public Exploit available since 30 days AND No administrative privileges required AND Network attack vector",
+                                "ruleId": "17453",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnAge",
+                                        "extra": {
+                                            "age": 60
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitableNoAdmin"
+                                    },
+                                    {
+                                        "type": "vulnExploitableViaNetwork"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnDenyList",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Vulnerabilities Deny List: CVE-2022-22963, CVE-2021-44832, CVE-2017-8046",
+                                "ruleId": "17452",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "denyCVE",
+                                        "extra": {
+                                            "vulnIds": [
+                                                "CVE-2022-22963",
+                                                "CVE-2021-44832",
+                                                "CVE-2017-8046"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "imageConfigDefaultUser",
+                                "failureType": "imageConfigFailure",
+                                "description": "User is root",
+                                "ruleId": "17450",
+                                "failures": [
+                                    {
+                                        "remediation": "Modify your image configuration and set the default user to other than root\nCheck the documentation to learn why and how to change the default image user\n",
+                                        "Arguments": null
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "imageConfigDefaultUserIsRoot"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "imageConfigSensitiveInformationAndSecrets",
+                                "failureType": "imageConfigFailure",
+                                "description": "Forbid sensitive information and secrets in the image metadata",
+                                "ruleId": "17449",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "imageConfigSensitiveInformationAndSecrets"
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2022-03-31T20:35:43.432508Z",
+                        "updatedAt": "2022-03-31T20:35:43.432508Z"
+                    },
+                    {
+                        "name": "Severe vulnerabilities with a Fix",
+                        "identifier": "severe_vulnerabilities_with_a_fix",
+                        "type": "predefined",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal critical AND Fixable",
+                                "ruleId": "17153",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal high AND Network attack vector AND Fixable",
+                                "ruleId": "17155",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[0].vuln[0]",
+                                        "description": "CVE-2024-5535 found in pkg 'libcrypto3:3.3.1-r0'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[1].vuln[0]",
+                                        "description": "CVE-2024-5535 found in pkg 'libssl3:3.3.1-r0'"
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitableViaNetwork"
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal high AND Fixable since 30 days",
+                                "ruleId": "17154",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2022-01-17T10:54:14.571304Z",
+                        "updatedAt": "2022-01-17T10:54:14.571304Z"
+                    }
+                ],
+                "acceptedRiskTotal": 0,
+                "evaluationResult": "failed",
+                "createdAt": "2022-04-27T14:27:07.255907Z",
+                "updatedAt": "2024-08-06T10:39:14.167238Z"
+            },
+            {
+                "name": "Out of the Box Policy",
+                "identifier": "out-of-the-box-policy",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "Severe vulnerabilities with a Fix",
+                        "identifier": "severe_vulnerabilities_with_a_fix",
+                        "type": "predefined",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal high AND Network attack vector AND Fixable",
+                                "ruleId": "17155",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[0].vuln[0]",
+                                        "description": "CVE-2024-5535 found in pkg 'libcrypto3:3.3.1-r0'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[1].vuln[0]",
+                                        "description": "CVE-2024-5535 found in pkg 'libssl3:3.3.1-r0'"
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitableViaNetwork"
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal high AND Fixable since 30 days",
+                                "ruleId": "17154",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal critical AND Fixable",
+                                "ruleId": "17153",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2022-01-17T10:54:14.571304Z",
+                        "updatedAt": "2022-01-17T10:54:14.571304Z"
+                    }
+                ],
+                "acceptedRiskTotal": 0,
+                "evaluationResult": "failed",
+                "createdAt": "2022-04-06T17:22:00.784329Z",
+                "updatedAt": "2024-07-10T03:03:13.53003Z"
+            },
+            {
+                "name": "SLA Test",
+                "identifier": "sla-test",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "SLA Test",
+                        "identifier": "sla-test",
+                        "type": "custom",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal critical AND Fixable since 30 days AND Public Exploit available",
+                                "ruleId": "17413",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitable"
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2023-08-18T19:46:18.545369Z",
+                        "updatedAt": "2023-08-18T19:46:18.545369Z"
+                    }
+                ],
+                "acceptedRiskTotal": 0,
+                "evaluationResult": "passed",
+                "createdAt": "2023-08-18T19:47:05.898606Z",
+                "updatedAt": "2023-08-18T19:47:05.898606Z"
+            },
+            {
+                "name": "AWS EKS  - Severe Vulnerabilities with a Fix",
+                "identifier": "aws-eks-severe-vulnerabilities-with-a-fix",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "Severe vulnerabilities with a Fix",
+                        "identifier": "severe_vulnerabilities_with_a_fix",
+                        "type": "predefined",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal critical AND Fixable",
+                                "ruleId": "17153",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal high AND Network attack vector AND Fixable",
+                                "ruleId": "17155",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[0].vuln[0]",
+                                        "description": "CVE-2024-5535 found in pkg 'libcrypto3:3.3.1-r0'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[1].vuln[0]",
+                                        "description": "CVE-2024-5535 found in pkg 'libssl3:3.3.1-r0'"
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitableViaNetwork"
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal high AND Fixable since 30 days",
+                                "ruleId": "17154",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2022-01-17T10:54:14.571304Z",
+                        "updatedAt": "2022-01-17T10:54:14.571304Z"
+                    }
+                ],
+                "acceptedRiskTotal": 0,
+                "evaluationResult": "failed",
+                "createdAt": "2022-12-19T10:38:13.268272Z",
+                "updatedAt": "2022-12-19T10:38:13.268272Z"
+            },
+            {
+                "name": "PCI-DSS_PG",
+                "identifier": "pci-dss_pg",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "Severe vulnerabilities with a Fix",
+                        "identifier": "severe_vulnerabilities_with_a_fix",
+                        "type": "predefined",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal critical AND Fixable",
+                                "ruleId": "17153",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal high AND Network attack vector AND Fixable",
+                                "ruleId": "17155",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[0].vuln[0]",
+                                        "description": "CVE-2024-5535 found in pkg 'libcrypto3:3.3.1-r0'"
+                                    },
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[1].vuln[0]",
+                                        "description": "CVE-2024-5535 found in pkg 'libssl3:3.3.1-r0'"
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitableViaNetwork"
+                                    },
+                                    {
+                                        "type": "vulnIsFixable"
+                                    }
+                                ]
+                            },
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity equal high AND Fixable since 30 days",
+                                "ruleId": "17154",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverityEquals",
+                                        "extra": {
+                                            "level": "high"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnIsFixableWithAge",
+                                        "extra": {
+                                            "age": 30
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2022-01-17T10:54:14.571304Z",
+                        "updatedAt": "2022-01-17T10:54:14.571304Z"
+                    }
+                ],
+                "acceptedRiskTotal": 0,
+                "evaluationResult": "failed",
+                "createdAt": "2023-06-13T13:14:13.842749Z",
+                "updatedAt": "2023-06-13T13:14:13.842749Z"
+            },
+            {
+                "name": "landsure",
+                "identifier": "landsure",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "test-landsure-bundle",
+                        "identifier": "test-landsure-bundle",
+                        "type": "custom",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Package type is os",
+                                "ruleId": "17729",
+                                "failures": [
+                                    {
+                                        "pkgIndex": 1,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[1].vuln[0]",
+                                        "description": "CVE-2024-5535 found in pkg 'libssl3:3.3.1-r0'"
+                                    },
+                                    {
+                                        "pkgIndex": 0,
+                                        "vulnInPkgIndex": 0,
+                                        "ref": "$.result.packages[0].vuln[0]",
+                                        "description": "CVE-2024-5535 found in pkg 'libcrypto3:3.3.1-r0'"
+                                    }
+                                ],
+                                "evaluationResult": "failed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnPkgType",
+                                        "extra": {
+                                            "pkgType": "os"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2024-06-13T20:41:39.934179Z",
+                        "updatedAt": "2024-06-13T20:41:39.934179Z"
+                    }
+                ],
+                "acceptedRiskTotal": 0,
+                "evaluationResult": "failed",
+                "createdAt": "2024-06-13T20:43:23.543985Z",
+                "updatedAt": "2024-06-13T20:49:17.817355Z"
+            },
+            {
+                "name": "test",
+                "identifier": "test",
+                "type": "scoped",
+                "bundles": [
+                    {
+                        "name": "test",
+                        "identifier": "test",
+                        "type": "custom",
+                        "rules": [
+                            {
+                                "ruleType": "vulnSeverityAndThreats",
+                                "failureType": "pkgVulnFailure",
+                                "description": "Severity greater than or equal critical AND Public Exploit available AND No User interaction required",
+                                "ruleId": "17682",
+                                "evaluationResult": "passed",
+                                "predicates": [
+                                    {
+                                        "type": "vulnSeverity",
+                                        "extra": {
+                                            "level": "critical"
+                                        }
+                                    },
+                                    {
+                                        "type": "vulnExploitable"
+                                    },
+                                    {
+                                        "type": "vulnExploitableNoUser"
+                                    }
+                                ]
+                            }
+                        ],
+                        "createdAt": "2024-04-08T14:04:05.739402Z",
+                        "updatedAt": "2024-04-08T14:04:05.739402Z"
+                    }
+                ],
+                "acceptedRiskTotal": 0,
+                "evaluationResult": "passed",
+                "createdAt": "2024-04-08T14:05:10.696933Z",
+                "updatedAt": "2024-04-08T14:05:10.696933Z"
+            }
+        ],
+        "policyEvaluationsResult": "failed"
+    }
+}
